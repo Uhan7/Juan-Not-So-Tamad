@@ -4,15 +4,40 @@ using UnityEngine;
 
 public class JuanLukso : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    private Rigidbody2D rb;
+
+    public float intSpeed;
+    public float jumpHeight;
+
+    public KeyCode jumpKey;
+    private bool jumpPress;
+
     void Start()
     {
-        
+
+        rb = GetComponent<Rigidbody2D>();
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetKeyDown(jumpKey))
+        {
+            jumpPress = true;
+        }
+    }
+
+    void FixedUpdate()
+    {
+
+        rb.velocity = new Vector2(intSpeed, rb.velocity.y);
+
+        if (jumpPress)
+        {
+            rb.AddForce(Vector2.up * jumpHeight);
+            jumpPress = false;
+        }
+
     }
 }
