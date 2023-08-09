@@ -7,6 +7,7 @@ TagManager:
   - Red Spot
   - Orange Spot
   - Yellow Spot
+  - Hotspot Hitbox
   layers:
   - Default
   - TransparentFX
