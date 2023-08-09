@@ -141,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lukso Meter_0
+      name: Lukso Meter_2
       rect:
         serializedVersion: 2
-        x: 11
-        y: 142
-        width: 298
-        height: 18
+        x: 9
+        y: 194
+        width: 302
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,13 +162,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lukso Meter_1
+      name: Lukso Meter_3
       rect:
         serializedVersion: 2
-        x: 12
-        y: 132
-        width: 294
-        height: 7
+        x: 9
+        y: 162
+        width: 302
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,13 +183,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lukso Meter_2
+      name: Lukso Meter_4
       rect:
         serializedVersion: 2
-        x: 11
-        y: 116
-        width: 298
-        height: 12
+        x: 9
+        y: 130
+        width: 302
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,13 +204,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lukso Meter_3
+      name: Lukso Meter_5
       rect:
         serializedVersion: 2
-        x: 10
-        y: 84
-        width: 300
-        height: 14
+        x: 0
+        y: 100
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,12 +225,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lukso Meter_4
+      name: Lukso Meter_6
       rect:
         serializedVersion: 2
-        x: 9
-        y: 52
-        width: 302
+        x: 0
+        y: 84
+        width: 48
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -246,13 +246,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lukso Meter_5
+      name: Lukso Meter_7
       rect:
         serializedVersion: 2
-        x: 5
-        y: 10
-        width: 36
-        height: 4
+        x: 0
+        y: 68
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,13 +267,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lukso Meter_6
+      name: Lukso Meter_8
       rect:
         serializedVersion: 2
-        x: 4
-        y: 25
-        width: 38
-        height: 6
+        x: 0
+        y: 52
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,13 +288,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lukso Meter_7
+      name: Lukso Meter_9
       rect:
         serializedVersion: 2
-        x: 4
-        y: 41
-        width: 38
-        height: 6
+        x: 0
+        y: 36
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,12 +309,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lukso Meter_8
+      name: Lukso Meter_12
       rect:
         serializedVersion: 2
-        x: 54
-        y: 4
-        width: 5
+        x: 48
+        y: 36
+        width: 48
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -330,13 +330,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lukso Meter_9
+      name: Lukso Meter_0
       rect:
         serializedVersion: 2
-        x: 54
-        y: 20
-        width: 5
-        height: 16
+        x: 11
+        y: 222
+        width: 298
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,8 +344,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbc38145e84aa46669d4cab215056334
-      internalID: 1440386686
+      spriteID: a8b3b23357cd94a80ab3ed42c1a33ae1
+      internalID: 424087720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lukso Meter_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 212
+        width: 294
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d309e90ae1c4745e3897308f00a38c2d
+      internalID: -320791724
       vertices: []
       indices: 
       edges: []
@@ -354,9 +375,9 @@ TextureImporter:
       name: Lukso Meter_10
       rect:
         serializedVersion: 2
-        x: 70
+        x: 0
         y: 20
-        width: 6
+        width: 48
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -365,8 +386,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53ec8b45c24754533ad9f378c4306608
-      internalID: 904261598
+      spriteID: f91768a81a1254f458f92e843e277e6f
+      internalID: -1881677765
       vertices: []
       indices: 
       edges: []
@@ -375,9 +396,9 @@ TextureImporter:
       name: Lukso Meter_11
       rect:
         serializedVersion: 2
-        x: 70
-        y: 4
-        width: 5
+        x: 48
+        y: 52
+        width: 48
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -386,29 +407,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f3e455c395bd45a98ae01e4a20a7ea4
-      internalID: 2043787901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lukso Meter_12
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 2
-        width: 15
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e742fafa67344a00b9b734b0c10726b
-      internalID: 676253799
+      spriteID: 6934cba06b7404d1991ee48e5e58a2fc
+      internalID: 1345732989
       vertices: []
       indices: 
       edges: []
@@ -417,10 +417,10 @@ TextureImporter:
       name: Lukso Meter_13
       rect:
         serializedVersion: 2
-        x: 96
-        y: 2
-        width: 15
-        height: 34
+        x: 48
+        y: 20
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,8 +428,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17d9858381e114e06a5d8615b07ea0bf
-      internalID: 1997736336
+      spriteID: 1cb5f59ea277540ca9a760a962bad605
+      internalID: -1762352435
       vertices: []
       indices: 
       edges: []
@@ -438,10 +438,10 @@ TextureImporter:
       name: Lukso Meter_14
       rect:
         serializedVersion: 2
-        x: 113
-        y: 2
-        width: 15
-        height: 34
+        x: 48
+        y: 68
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,8 +449,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fabd3c8bffaf4e689f45c1b3ce4bd64
-      internalID: 762139462
+      spriteID: dbd371742658e4fa299032cfdf9f1863
+      internalID: -103993050
       vertices: []
       indices: 
       edges: []
@@ -459,10 +459,10 @@ TextureImporter:
       name: Lukso Meter_15
       rect:
         serializedVersion: 2
-        x: 129
-        y: 2
-        width: 15
-        height: 34
+        x: 48
+        y: 84
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,8 +470,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a80661aea3fe249c79b65c2f6f64de98
-      internalID: -1693864843
+      spriteID: 0114e098079254e7582f7a14123e3d49
+      internalID: 1440386686
       vertices: []
       indices: 
       edges: []
@@ -480,10 +480,10 @@ TextureImporter:
       name: Lukso Meter_16
       rect:
         serializedVersion: 2
-        x: 144
-        y: 2
-        width: 15
-        height: 34
+        x: 48
+        y: 100
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,8 +491,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 980ef7e2595084a9cb6bc104af6200db
-      internalID: 706104790
+      spriteID: 941cae57b34f2471aba1cb9e72ef1c8d
+      internalID: -895542564
       vertices: []
       indices: 
       edges: []
@@ -501,10 +501,10 @@ TextureImporter:
       name: Lukso Meter_17
       rect:
         serializedVersion: 2
-        x: 161
-        y: 2
-        width: 15
-        height: 34
+        x: 64
+        y: 68
+        width: 16
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,8 +512,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 899fc1a134b3d445eb4df95229cbdc9a
-      internalID: -1618701153
+      spriteID: 034641506aa94497499b01333dd7b4c9
+      internalID: -371353124
       vertices: []
       indices: 
       edges: []
@@ -522,10 +522,10 @@ TextureImporter:
       name: Lukso Meter_18
       rect:
         serializedVersion: 2
-        x: 177
-        y: 2
-        width: 15
-        height: 34
+        x: 80
+        y: 68
+        width: 16
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,8 +533,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac3fc2e390c244709981f8a73ede192b
-      internalID: 23391805
+      spriteID: 855e266b17ca54a00b4a32838b860dd3
+      internalID: 2006468570
       vertices: []
       indices: 
       edges: []
@@ -543,10 +543,10 @@ TextureImporter:
       name: Lukso Meter_19
       rect:
         serializedVersion: 2
-        x: 192
-        y: 2
-        width: 15
-        height: 34
+        x: 96
+        y: 68
+        width: 16
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,8 +554,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d51368225acf848aeb789c311dbf3298
-      internalID: -916557829
+      spriteID: f225e2b422607496ebd7dc18d2940be6
+      internalID: 904261598
       vertices: []
       indices: 
       edges: []
@@ -564,10 +564,10 @@ TextureImporter:
       name: Lukso Meter_20
       rect:
         serializedVersion: 2
-        x: 209
-        y: 2
-        width: 15
-        height: 34
+        x: 112
+        y: 68
+        width: 16
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,8 +575,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fb01580b303349379e4a143e9833425
-      internalID: 975018865
+      spriteID: 31e0591ae9fa54d0493ede32c3657ecd
+      internalID: 2043787901
       vertices: []
       indices: 
       edges: []
@@ -585,10 +585,10 @@ TextureImporter:
       name: Lukso Meter_21
       rect:
         serializedVersion: 2
-        x: 225
-        y: 2
-        width: 15
-        height: 34
+        x: 128
+        y: 68
+        width: 16
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,8 +596,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f5eb1bfde37540689a50d73cd28a1cc
-      internalID: -726893384
+      spriteID: 64cb414130eea4a73bde0ca4ec0b9092
+      internalID: 910019811
       vertices: []
       indices: 
       edges: []
@@ -606,10 +606,10 @@ TextureImporter:
       name: Lukso Meter_22
       rect:
         serializedVersion: 2
-        x: 241
-        y: 2
-        width: 15
-        height: 34
+        x: 144
+        y: 68
+        width: 16
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,8 +617,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6c255254e29942eaacc87e41b2f8ca0
-      internalID: -1876058459
+      spriteID: 99c3a20008b784785b78459f037399cb
+      internalID: -459335257
       vertices: []
       indices: 
       edges: []
@@ -627,10 +627,10 @@ TextureImporter:
       name: Lukso Meter_23
       rect:
         serializedVersion: 2
-        x: 257
-        y: 2
-        width: 15
-        height: 34
+        x: 160
+        y: 68
+        width: 16
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,8 +638,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c7025c09da8d49d7b95a6cc3b842497
-      internalID: 1099177274
+      spriteID: c534afe258a6a412f845ea24a0d61173
+      internalID: 716180225
       vertices: []
       indices: 
       edges: []
@@ -648,10 +648,10 @@ TextureImporter:
       name: Lukso Meter_24
       rect:
         serializedVersion: 2
-        x: 274
-        y: 2
-        width: 15
-        height: 34
+        x: 176
+        y: 68
+        width: 16
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,8 +659,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3ca2c76b64df483d862a72de404e16b
-      internalID: 234444351
+      spriteID: 82f919b9508c74b3faa563249d5c67e4
+      internalID: 940723555
       vertices: []
       indices: 
       edges: []
@@ -669,10 +669,10 @@ TextureImporter:
       name: Lukso Meter_25
       rect:
         serializedVersion: 2
-        x: 289
-        y: 2
-        width: 15
-        height: 34
+        x: 192
+        y: 68
+        width: 16
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,8 +680,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e64ea043284a74366bcec557d4fae6e3
-      internalID: 1559077447
+      spriteID: ff68a3e70dfd24ffea617a2a1f34cbc8
+      internalID: -2074693450
       vertices: []
       indices: 
       edges: []
@@ -690,10 +690,10 @@ TextureImporter:
       name: Lukso Meter_26
       rect:
         serializedVersion: 2
-        x: 305
-        y: 2
-        width: 15
-        height: 34
+        x: 208
+        y: 68
+        width: 16
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,8 +701,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8df3414aa3f62444ab70d5e9956a5f6a
-      internalID: -80038983
+      spriteID: f766c2e7d75304b45997ce89afe30b19
+      internalID: 676253799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lukso Meter_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 68
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d1d2c31b1e043f5970d52ef68c8179
+      internalID: 1440695057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lukso Meter_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 68
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92c99a698c9a44c086605ea1f6617b7
+      internalID: -81930474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lukso Meter_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 68
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3edde2eddcb3e42e4b461e508113d760
+      internalID: 1488099686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lukso Meter_30
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 68
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86689f10f119b40ba9e40fb47443e9bf
+      internalID: 40590714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lukso Meter_31
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 68
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27ed588d042f43798dd89b162c82f94
+      internalID: 1555034818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lukso Meter_32
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 68
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56dcf48c5bfa443c9de6f71018c6001
+      internalID: -285632337
       vertices: []
       indices: 
       edges: []
@@ -738,7 +864,13 @@ TextureImporter:
       Lukso Meter_24: 940723555
       Lukso Meter_25: -2074693450
       Lukso Meter_26: 676253799
+      Lukso Meter_27: 1440695057
+      Lukso Meter_28: -81930474
+      Lukso Meter_29: 1488099686
       Lukso Meter_3: 1166739195
+      Lukso Meter_30: 40590714
+      Lukso Meter_31: 1555034818
+      Lukso Meter_32: -285632337
       Lukso Meter_4: 1109439088
       Lukso Meter_5: 2090643639
       Lukso Meter_6: -1071432579

@@ -9,7 +9,6 @@ public class TimerFX : MonoBehaviour
 
     private void Start()
     {
-        print("ded");
         Destroy(gameObject, lifeTime);
     }
 
