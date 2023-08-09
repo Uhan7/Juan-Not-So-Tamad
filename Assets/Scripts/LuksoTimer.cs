@@ -7,19 +7,19 @@ public class LuksoTimer : MonoBehaviour
 
     private Rigidbody2D rb;
     private RectTransform rt;
+    private Animator anim;
 
     public float speed;
     private bool speedChanged;
 
-    private int touching;
-
     private bool broke;
     public float brokeTime;
+
+    private int touching;
 
     public GameObject canvas;
     public GameObject[] FXs;
     public GameObject chosenFX;
-
     public GameObject pulseFX;
     public GameObject breakFX;
 
@@ -27,12 +27,17 @@ public class LuksoTimer : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rt = GetComponent<RectTransform>();
+        anim = GetComponent<Animator>();
 
         speedChanged = false;
+
     }
 
     private void Update()
     {
+
+        anim.SetBool("Broke", broke);
+
         if (rt.localPosition.x >= 146 && !speedChanged)
         {
             speed *= -1;
@@ -78,9 +83,8 @@ public class LuksoTimer : MonoBehaviour
         rb.velocity = (Vector2.right * speed);
     }
 
-    private void OnTriggerStay2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-
         touching++;
 
         if (col.gameObject.CompareTag("Red Spot"))
@@ -94,10 +98,6 @@ public class LuksoTimer : MonoBehaviour
         else if (col.gameObject.CompareTag("Yellow Spot"))
         {
             chosenFX = FXs[2];
-        }
-        else
-        {
-            print("nah");
         }
     }
 
