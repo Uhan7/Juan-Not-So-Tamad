@@ -11,9 +11,17 @@ public class LuksoTimer : MonoBehaviour
     public float speed;
     private bool speedChanged;
 
+    private int touching;
+
+    private bool broke;
+    public float brokeTime;
+
     public GameObject canvas;
     public GameObject[] FXs;
     public GameObject chosenFX;
+
+    public GameObject pulseFX;
+    public GameObject breakFX;
 
     void Start()
     {
@@ -36,13 +44,33 @@ public class LuksoTimer : MonoBehaviour
             speedChanged = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && touching > 0 && !broke)
         {
             var FX = Instantiate(chosenFX) as GameObject;
             FX.transform.SetParent(canvas.transform, false);
             FX.transform.position = transform.position;
+
+            var PFX = Instantiate(pulseFX) as GameObject;
+            PFX.transform.SetParent(canvas.transform, false);
+            PFX.transform.position = new Vector2(160, transform.position.y);
+        }
+        else if (Input.GetKeyDown(KeyCode.W) && touching <= 0)
+        {
+            StartCoroutine(Break());
         }
 
+    }
+
+    IEnumerator Break()
+    {
+        broke = true;
+
+        var BFX = Instantiate(breakFX) as GameObject;
+        BFX.transform.SetParent(canvas.transform, false);
+        BFX.transform.position = transform.position;
+
+        yield return new WaitForSeconds(brokeTime);
+        broke = false;
     }
 
     void FixedUpdate()
@@ -52,6 +80,9 @@ public class LuksoTimer : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D col)
     {
+
+        touching++;
+
         if (col.gameObject.CompareTag("Red Spot"))
         {
             chosenFX = FXs[0];
@@ -68,5 +99,10 @@ public class LuksoTimer : MonoBehaviour
         {
             print("nah");
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        touching--;
     }
 }
