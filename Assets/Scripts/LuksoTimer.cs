@@ -9,6 +9,9 @@ public class LuksoTimer : MonoBehaviour
     private RectTransform rt;
     private Animator anim;
 
+    private AudioSource asource;
+    public AudioClip breakSFX;
+
     public float speed;
     private bool speedChanged;
 
@@ -17,17 +20,19 @@ public class LuksoTimer : MonoBehaviour
 
     private int touching;
 
+    public GameObject meter;
+
     public GameObject canvas;
     public GameObject[] FXs;
     public GameObject chosenFX;
     public GameObject pulseFX;
-    public GameObject breakFX;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rt = GetComponent<RectTransform>();
         anim = GetComponent<Animator>();
+        asource = GetComponent<AudioSource>();
 
         speedChanged = false;
 
@@ -59,7 +64,7 @@ public class LuksoTimer : MonoBehaviour
             PFX.transform.SetParent(canvas.transform, false);
             PFX.transform.position = new Vector2(160, transform.position.y);
         }
-        else if (Input.GetKeyDown(KeyCode.W) && touching <= 0)
+        else if (Input.GetKeyDown(KeyCode.W) && touching <= 0 && !broke)
         {
             StartCoroutine(Break());
         }
@@ -68,13 +73,19 @@ public class LuksoTimer : MonoBehaviour
 
     IEnumerator Break()
     {
+
+        asource.PlayOneShot(breakSFX);
+
         broke = true;
-
-        var BFX = Instantiate(breakFX) as GameObject;
-        BFX.transform.SetParent(canvas.transform, false);
-        BFX.transform.position = transform.position;
-
-        yield return new WaitForSeconds(brokeTime);
+        meter.transform.localPosition = new Vector2(2, 0);
+        yield return new WaitForSeconds(brokeTime / 4);
+        meter.transform.localPosition = new Vector2(-2, 0);
+        yield return new WaitForSeconds(brokeTime / 4);
+        meter.transform.localPosition = new Vector2(2, 0);
+        yield return new WaitForSeconds(brokeTime / 4);
+        meter.transform.localPosition = new Vector2(-2, 0);
+        yield return new WaitForSeconds(brokeTime / 4);
+        meter.transform.localPosition = new Vector2(0, 0);
         broke = false;
     }
 
