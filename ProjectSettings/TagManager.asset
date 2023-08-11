@@ -8,6 +8,8 @@ TagManager:
   - Orange Spot
   - Yellow Spot
   - Hotspot Hitbox
+  - Lukso Meter
+  - Lukso Timer
   layers:
   - Default
   - TransparentFX

@@ -11,12 +11,17 @@ public class LuksoTimer : MonoBehaviour
 
     private AudioSource asource;
     public AudioClip breakSFX;
+    public AudioClip timerHitSFX;
 
     public float speed;
     private bool speedChanged;
 
     private bool broke;
     public float brokeTime;
+
+    public GameObject juan;
+    private JuanLukso juanScript;
+    private Rigidbody2D juanRB;
 
     private int touching;
 
@@ -34,6 +39,9 @@ public class LuksoTimer : MonoBehaviour
         anim = GetComponent<Animator>();
         asource = GetComponent<AudioSource>();
 
+        juanScript = juan.GetComponent<JuanLukso>();
+        juanRB = juan.GetComponent<Rigidbody2D>();
+
         speedChanged = false;
 
     }
@@ -43,18 +51,7 @@ public class LuksoTimer : MonoBehaviour
 
         anim.SetBool("Broke", broke);
 
-        if (rt.localPosition.x >= 146 && !speedChanged)
-        {
-            speed *= -1;
-            speedChanged = true;
-        }
-        if (rt.localPosition.x <= -146 && speedChanged)
-        {
-            speed *= -1;
-            speedChanged = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.W) && touching > 0 && !broke)
+        if (Input.GetKeyDown(KeyCode.Space) && touching > 0 && !broke)
         {
             var FX = Instantiate(chosenFX) as GameObject;
             FX.transform.SetParent(canvas.transform, false);
@@ -63,8 +60,10 @@ public class LuksoTimer : MonoBehaviour
             var PFX = Instantiate(pulseFX) as GameObject;
             PFX.transform.SetParent(canvas.transform, false);
             PFX.transform.position = new Vector2(160, transform.position.y);
+
+            juanRB.AddForce(Vector2.right * juanScript.intSpeed);
         }
-        else if (Input.GetKeyDown(KeyCode.W) && touching <= 0 && !broke)
+        else if (Input.GetKeyDown(KeyCode.Space) && touching <= 0 && !broke)
         {
             StartCoroutine(Break());
         }
@@ -92,28 +91,48 @@ public class LuksoTimer : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = (Vector2.right * speed);
+
+        if (rt.localPosition.x >= 146 && !speedChanged)
+        {
+            speed *= -1;
+            speedChanged = true;
+        }
+        if (rt.localPosition.x <= -146 && speedChanged)
+        {
+            speed *= -1;
+            speedChanged = false;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        touching++;
+
+        if (col.gameObject.CompareTag("Lukso Meter"))
+        {
+            asource.PlayOneShot(timerHitSFX);
+        }
 
         if (col.gameObject.CompareTag("Red Spot"))
         {
+            touching++;
             chosenFX = FXs[0];
         }
         else if (col.gameObject.CompareTag("Orange Spot"))
         {
+            touching++;
             chosenFX = FXs[1];
         }
         else if (col.gameObject.CompareTag("Yellow Spot"))
         {
+            touching++;
             chosenFX = FXs[2];
         }
     }
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        touching--;
+        if (col.gameObject.CompareTag("Red Spot") ||
+            col.gameObject.CompareTag("Orange Spot") ||
+            col.gameObject.CompareTag("Yellow Spot")) touching--;
     }
 }

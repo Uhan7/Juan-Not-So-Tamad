@@ -13,6 +13,8 @@ public class JuanLukso : MonoBehaviour
     public KeyCode jumpKey;
     private bool jumpPress;
 
+    public float decaySpeed;
+
     void Start()
     {
 
@@ -30,14 +32,6 @@ public class JuanLukso : MonoBehaviour
 
     void FixedUpdate()
     {
-
-        rb.velocity = new Vector2(intSpeed, rb.velocity.y);
-
-        if (jumpPress)
-        {
-            rb.AddForce(Vector2.up * jumpHeight);
-            jumpPress = false;
-        }
-
+        rb.velocity = new Vector2(rb.velocity.x * decaySpeed, rb.velocity.y);  
     }
 }

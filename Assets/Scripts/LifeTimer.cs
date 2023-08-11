@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimerFX : MonoBehaviour
+public class LifeTimer : MonoBehaviour
 {
 
     public float lifeTime;
