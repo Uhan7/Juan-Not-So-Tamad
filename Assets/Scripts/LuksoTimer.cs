@@ -135,4 +135,11 @@ public class LuksoTimer : MonoBehaviour
             col.gameObject.CompareTag("Orange Spot") ||
             col.gameObject.CompareTag("Yellow Spot")) touching--;
     }
+
+    private void OnDestroy(GameObject col)
+    {
+        if (col.gameObject.CompareTag("Red Spot") ||
+           col.gameObject.CompareTag("Orange Spot") ||
+           col.gameObject.CompareTag("Yellow Spot")) touching--;
+    }
 }
