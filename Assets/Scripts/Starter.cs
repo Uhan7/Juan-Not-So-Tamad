@@ -9,7 +9,7 @@ public class Starter : MonoBehaviour
 
     public GameObject hotspotSpawner;
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerExit2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("Lukso Timer"))
         {

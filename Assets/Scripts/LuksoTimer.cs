@@ -11,7 +11,6 @@ public class LuksoTimer : MonoBehaviour
 
     private AudioSource asource;
     public AudioClip breakSFX;
-    public AudioClip timerHitSFX;
 
     public float speed;
     private bool speedChanged;
@@ -29,8 +28,16 @@ public class LuksoTimer : MonoBehaviour
 
     public GameObject canvas;
     public GameObject[] FXs;
-    public GameObject chosenFX;
+    private GameObject chosenFX;
     public GameObject pulseFX;
+
+    public AudioClip YellowSFX;
+    public AudioClip OrangeSFX;
+    public AudioClip RedSFX;
+    private AudioClip chosenSFX;
+
+    public int timerHitsReq;
+    public int timerHits;
 
     void Start()
     {
@@ -53,6 +60,8 @@ public class LuksoTimer : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && touching > 0 && !broke)
         {
+            asource.PlayOneShot(chosenSFX);
+
             var FX = Instantiate(chosenFX) as GameObject;
             FX.transform.SetParent(canvas.transform, false);
             FX.transform.position = transform.position;
@@ -109,23 +118,26 @@ public class LuksoTimer : MonoBehaviour
 
         if (col.gameObject.CompareTag("Lukso Meter"))
         {
-            asource.PlayOneShot(timerHitSFX);
+            timerHits++;
         }
 
         if (col.gameObject.CompareTag("Red Spot"))
         {
             touching++;
             chosenFX = FXs[0];
+            chosenSFX = RedSFX;
         }
         else if (col.gameObject.CompareTag("Orange Spot"))
         {
             touching++;
             chosenFX = FXs[1];
+            chosenSFX = OrangeSFX;
         }
         else if (col.gameObject.CompareTag("Yellow Spot"))
         {
             touching++;
             chosenFX = FXs[2];
+            chosenSFX = YellowSFX;
         }
     }
 
@@ -134,12 +146,5 @@ public class LuksoTimer : MonoBehaviour
         if (col.gameObject.CompareTag("Red Spot") ||
             col.gameObject.CompareTag("Orange Spot") ||
             col.gameObject.CompareTag("Yellow Spot")) touching--;
-    }
-
-    private void OnDestroy(GameObject col)
-    {
-        if (col.gameObject.CompareTag("Red Spot") ||
-           col.gameObject.CompareTag("Orange Spot") ||
-           col.gameObject.CompareTag("Yellow Spot")) touching--;
     }
 }

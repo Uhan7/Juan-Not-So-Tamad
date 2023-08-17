@@ -14,21 +14,48 @@ public class HotspotSpawner : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(SpawnHotSpots(1, 5, 160));
-        StartCoroutine(SpawnHotSpots(1, 7, 234));
-        StartCoroutine(SpawnHotSpots(1, 8, 270));
+        StartCoroutine(SpawnHotSpots(0, 146));
+        StartCoroutine(SpawnHotSpots(0, 146));
+        StartCoroutine(SpawnHotSpots(0, 146));
+        StartCoroutine(SpawnHotSpots(0, 146));
+        StartCoroutine(SpawnHotSpots(0, 146));
+        StartCoroutine(SpawnHotSpots(0, 146));
+        StartCoroutine(SpawnHotSpots(0, 146));
+        StartCoroutine(SpawnHotSpots(0, 146));
+        StartCoroutine(SpawnHotSpots(8, 146));
+        StartCoroutine(SpawnHotSpots(8, 146));
+        StartCoroutine(SpawnHotSpots(8, 146));
+        StartCoroutine(SpawnHotSpots(8, 146));
+        StartCoroutine(SpawnHotSpots(8, 146));
+        StartCoroutine(SpawnHotSpots(8, 146));
+        StartCoroutine(SpawnHotSpots(16, 146));
+        StartCoroutine(SpawnHotSpots(16, 146));
+        StartCoroutine(SpawnHotSpots(24, 146));
+        StartCoroutine(SpawnHotSpots(24, 146));
+        StartCoroutine(SpawnHotSpots(24, 146));
     }
 
-    IEnumerator SpawnHotSpots(int type, int time, float pos)
+    IEnumerator SpawnHotSpots(int time, float pos)
     {
         yield return new WaitForSeconds(oneBarCount * time);
-        var Hotspot = Instantiate(hotspot[type]) as GameObject;
-        GameObject HotspotHitbox = Hotspot.transform.GetChild(0).gameObject;
+        GameObject Hotspot;
+        if (pos <= -146)
+        {
+            Hotspot = Instantiate(hotspot[0]);
+        }
+        else if (pos >= 146)
+        {
+            Hotspot = Instantiate(hotspot[2]);
+        }
+        else
+        {
+            Hotspot = Instantiate(hotspot[1]);
+        }
         Hotspot.transform.SetParent(spawner.transform, false);
-        Hotspot.transform.position = new Vector2(pos, transform.position.y-72);
-        yield return new WaitForSeconds(oneBarCount * time + 2);
-        Destroy(HotspotHitbox);
-        yield return new WaitForSeconds(0.05f);
-        Destroy(Hotspot);
+        Hotspot.transform.localPosition = new Vector2(pos, transform.position.y-162);
+
+        print("boom");
+
+        yield return null;
     }
 }
