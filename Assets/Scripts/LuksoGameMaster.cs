@@ -9,6 +9,8 @@ public class LuksoGameMaster : MonoBehaviour
     public GameObject luksoTimer;
     private LuksoTimer luksoTimerScript;
 
+    public int reqPoints;
+
     private AudioSource asource;
     public AudioClip beep;
 
@@ -25,7 +27,14 @@ public class LuksoGameMaster : MonoBehaviour
     {
         if (luksoTimerScript.timerHits >= luksoTimerScript.timerHitsReq)
         {
-            Time.timeScale = 0;
+            if (luksoTimerScript.points >= reqPoints)
+            {
+                print("you passed yey bitch");
+            }
+            else
+            {
+                print("nah");
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.R))

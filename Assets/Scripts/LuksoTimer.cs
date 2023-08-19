@@ -39,6 +39,8 @@ public class LuksoTimer : MonoBehaviour
     public int timerHitsReq;
     public int timerHits;
 
+    public float points;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -69,6 +71,22 @@ public class LuksoTimer : MonoBehaviour
             var PFX = Instantiate(pulseFX) as GameObject;
             PFX.transform.SetParent(canvas.transform, false);
             PFX.transform.position = new Vector2(160, transform.position.y);
+
+            if (chosenFX == FXs[2])
+            {
+                print("penis");
+                points += 1;
+            }
+            else if (chosenFX == FXs[1])
+            {
+                print("penis");
+                points += 2;
+            }
+            else if (chosenFX == FXs[0])
+            {
+                print("penis");
+                points += 3;
+            }
 
             juanRB.AddForce(Vector2.right * juanScript.intSpeed);
         }

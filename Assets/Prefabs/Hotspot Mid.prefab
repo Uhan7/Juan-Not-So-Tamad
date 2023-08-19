@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitbox: {fileID: 7656736916234224429}
+  destroyFX: {fileID: 6145096907447258679, guid: 9b2a9517e92df4d71bb14ec54641fd29, type: 3}
 --- !u!61 &847617803958426115
 BoxCollider2D:
   m_ObjectHideFlags: 0
