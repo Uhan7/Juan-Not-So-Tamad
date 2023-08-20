@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 6145096907447258678}
   - component: {fileID: 6145096907447258676}
   - component: {fileID: 6145096907447258677}
-  - component: {fileID: 3706313430964737847}
-  - component: {fileID: 5487159633797013921}
-  - component: {fileID: 7683910727976177209}
+  - component: {fileID: 847617803958426115}
+  - component: {fileID: 5113242717543643025}
+  - component: {fileID: 8114227021647552977}
   m_Layer: 0
-  m_Name: Hotspot R Deth
+  m_Name: Hotspot Mid Pre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1881677765, guid: 898466938f72b45848bc53e10f082fd1, type: 3}
+  m_Sprite: {fileID: 545713165, guid: 898466938f72b45848bc53e10f082fd1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!61 &3706313430964737847
+--- !u!61 &847617803958426115
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,7 +92,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -7, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -103,9 +103,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 22, y: 4}
+  m_Size: {x: 36, y: 4}
   m_EdgeRadius: 0
---- !u!114 &5487159633797013921
+--- !u!114 &5113242717543643025
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,8 +117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13d9416260844e1a941442bef074b97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 0.2
---- !u!95 &7683910727976177209
+  lifeTime: 0.66
+--- !u!95 &8114227021647552977
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -128,7 +128,7 @@ Animator:
   m_GameObject: {fileID: 6145096907447258679}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9623cd5746fa848aaa45433670f51166, type: 2}
+  m_Controller: {fileID: 9100000, guid: 130a6ec1f964a472fbe751c96796d54e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

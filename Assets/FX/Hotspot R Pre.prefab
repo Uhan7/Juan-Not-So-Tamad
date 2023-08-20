@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5487159633797013921}
   - component: {fileID: 7683910727976177209}
   m_Layer: 0
-  m_Name: Hotspot R Deth
+  m_Name: Hotspot R Pre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13d9416260844e1a941442bef074b97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 0.2
+  lifeTime: 0.66
 --- !u!95 &7683910727976177209
 Animator:
   serializedVersion: 5
@@ -128,7 +128,7 @@ Animator:
   m_GameObject: {fileID: 6145096907447258679}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9623cd5746fa848aaa45433670f51166, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8fe6e4b3cda8c4a2196ecf47418008cc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
