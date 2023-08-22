@@ -27,7 +27,7 @@ public class LuksoFillBar : MonoBehaviour
 
     private void Update()
     {
-        fillBar.fillAmount = timerScript.points / maxPoints;
+        fillBar.fillAmount = LuksoTimer.points / maxPoints;
 
         if (fillBar.fillAmount >= 1 && !flashed)
         {
@@ -40,21 +40,21 @@ public class LuksoFillBar : MonoBehaviour
     IEnumerator BarFlash()
     {
         barFlasher.SetActive(true);
-        yield return new WaitForSeconds(flashRate);
+        yield return new WaitForSecondsRealtime(flashRate);
         barFlasher.SetActive(false);
-        yield return new WaitForSeconds(flashRate);
+        yield return new WaitForSecondsRealtime(flashRate);
         barFlasher.SetActive(true);
-        yield return new WaitForSeconds(flashRate);
+        yield return new WaitForSecondsRealtime(flashRate);
         barFlasher.SetActive(false);
-        yield return new WaitForSeconds(flashRate);
+        yield return new WaitForSecondsRealtime(flashRate);
         barFlasher.SetActive(true);
-        yield return new WaitForSeconds(flashRate);
+        yield return new WaitForSecondsRealtime(flashRate);
         barFlasher.SetActive(false);
-        yield return new WaitForSeconds(flashRate);
+        yield return new WaitForSecondsRealtime(flashRate);
         barFlasher.SetActive(true);
-        yield return new WaitForSeconds(flashRate);
+        yield return new WaitForSecondsRealtime(flashRate);
         barFlasher.SetActive(false);
-        yield return new WaitForSeconds(flashRate);
+        yield return new WaitForSecondsRealtime(flashRate);
         barFlasher.SetActive(true);
     }
 

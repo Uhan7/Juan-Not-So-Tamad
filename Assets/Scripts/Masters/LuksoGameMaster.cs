@@ -16,8 +16,15 @@ public class LuksoGameMaster : MonoBehaviour
 
     public float waitTime;
 
+    public static int wonRound;
+    public bool roundEnd;
+
     void Start()
     {
+
+        wonRound = 0;
+        roundEnd = false;
+
         luksoTimerScript = luksoTimer.GetComponent<LuksoTimer>();
         asource = GetComponent<AudioSource>();
         StartCoroutine(StartBeep());
@@ -25,15 +32,17 @@ public class LuksoGameMaster : MonoBehaviour
 
     void Update()
     {
-        if (luksoTimerScript.timerHits >= luksoTimerScript.timerHitsReq)
+        if (luksoTimerScript.timerHits >= luksoTimerScript.timerHitsReq && !roundEnd)
         {
-            if (luksoTimerScript.points >= reqPoints)
+            if (LuksoTimer.points >= reqPoints)
             {
-                print("you passed yey bitch");
+                wonRound = 2;
+                roundEnd = true;
             }
             else
             {
-                print("nah");
+                wonRound = 1;
+                roundEnd = true;
             }
         }
 

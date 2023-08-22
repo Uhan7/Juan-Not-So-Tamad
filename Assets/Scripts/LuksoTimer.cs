@@ -39,10 +39,13 @@ public class LuksoTimer : MonoBehaviour
     public int timerHitsReq;
     public int timerHits;
 
-    public float points;
+    public static float points;
 
     void Start()
     {
+
+        points = 0;
+
         rb = GetComponent<Rigidbody2D>();
         rt = GetComponent<RectTransform>();
         anim = GetComponent<Animator>();
@@ -74,21 +77,16 @@ public class LuksoTimer : MonoBehaviour
 
             if (chosenFX == FXs[2])
             {
-                print("penis");
                 points += 1;
             }
             else if (chosenFX == FXs[1])
             {
-                print("penis");
                 points += 2;
             }
             else if (chosenFX == FXs[0])
             {
-                print("penis");
                 points += 3;
             }
-
-            juanRB.AddForce(Vector2.right * juanScript.intSpeed);
         }
         else if (Input.GetKeyDown(KeyCode.Space) && touching <= 0 && !broke)
         {
@@ -104,13 +102,13 @@ public class LuksoTimer : MonoBehaviour
 
         broke = true;
         meter.transform.localPosition = new Vector2(2, 0);
-        yield return new WaitForSeconds(brokeTime / 4);
+        yield return new WaitForSecondsRealtime(brokeTime / 4);
         meter.transform.localPosition = new Vector2(-2, 0);
-        yield return new WaitForSeconds(brokeTime / 4);
+        yield return new WaitForSecondsRealtime(brokeTime / 4);
         meter.transform.localPosition = new Vector2(2, 0);
-        yield return new WaitForSeconds(brokeTime / 4);
+        yield return new WaitForSecondsRealtime(brokeTime / 4);
         meter.transform.localPosition = new Vector2(-2, 0);
-        yield return new WaitForSeconds(brokeTime / 4);
+        yield return new WaitForSecondsRealtime(brokeTime / 4);
         meter.transform.localPosition = new Vector2(0, 0);
         broke = false;
     }
@@ -137,6 +135,7 @@ public class LuksoTimer : MonoBehaviour
         if (col.gameObject.CompareTag("Lukso Meter"))
         {
             timerHits++;
+            if (timerHits % 4 == 1 && timerHits < timerHitsReq) juanRB.AddForce(Vector2.right * juanScript.intSpeed*4);
         }
 
         if (col.gameObject.CompareTag("Red Spot"))
