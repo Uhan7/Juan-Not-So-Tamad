@@ -10,6 +10,7 @@ TagManager:
   - Hotspot Hitbox
   - Lukso Meter
   - Lukso Timer
+  - Baka
   layers:
   - Default
   - TransparentFX

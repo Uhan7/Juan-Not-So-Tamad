@@ -7,6 +7,10 @@ public class JuanLukso : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    private AudioSource asource;
+    public AudioClip winSFX;
+    public AudioClip loseSFX;
+
     public float intSpeed;
     public float endSpeed;
     public float jumpHeight;
@@ -24,11 +28,15 @@ public class JuanLukso : MonoBehaviour
     private bool roundEnd;
     private bool endDecaySpeed;
 
+    public GameObject gameOverScreen;
+
     void Start()
     {
 
         roundEnd = false;
+
         rb = GetComponent<Rigidbody2D>();
+        asource = GetComponent<AudioSource>();
 
     }
 
@@ -39,9 +47,13 @@ public class JuanLukso : MonoBehaviour
             jumpPress = true;
         }
 
-        if ((LuksoGameMaster.wonRound == 2 || LuksoGameMaster.wonRound == 1) && !roundEnd)
+        if (LuksoGameMaster.wonRound == 2 && !roundEnd)
         {
-            StartCoroutine(RoundEnd());
+            StartCoroutine(RoundEnd(true));
+            roundEnd = true;
+        }
+        else if (LuksoGameMaster.wonRound == 1 && !roundEnd){
+            StartCoroutine(RoundEnd(false));
             roundEnd = true;
         }
 
@@ -53,16 +65,35 @@ public class JuanLukso : MonoBehaviour
         if (endRun) rb.velocity = new Vector2(endSpeed, rb.velocity.y);
     }
 
-    IEnumerator RoundEnd()
+    IEnumerator RoundEnd(bool win)
     {
         Time.timeScale = slowTimeScale;
-        rb.AddForce(Vector2.up * jumpHeight * LuksoTimer.points);
+        if (win) rb.AddForce(Vector2.up * jumpHeight * LuksoTimer.points);
+        else if (!win)
+        {
+            rb.AddForce(Vector2.up * jumpHeight * LuksoTimer.points * 0.8f); 
+        }
         endRun = true;
         yield return new WaitForSecondsRealtime(waitTime1);
         endRun = false;
         Time.timeScale = 1;
         yield return new WaitForSecondsRealtime(waitTime2);
         endDecaySpeed = true;
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Baka"))
+        {
+            StartCoroutine(ActivateGameOverScreen());
+        }
+    }
+
+    IEnumerator ActivateGameOverScreen()
+    {
+        yield return new WaitForSecondsRealtime(2f);
+        asource.PlayOneShot(loseSFX);
+        gameOverScreen.SetActive(true);
     }
 
 }
