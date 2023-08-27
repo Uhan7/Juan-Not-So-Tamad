@@ -6,17 +6,19 @@ public class JuanLukso : MonoBehaviour
 {
 
     private Rigidbody2D rb;
+    private Animator anim;
 
     private AudioSource asource;
-    public AudioClip winSFX;
-    public AudioClip loseSFX;
+
+    public AudioClip winJingle;
+    public AudioClip landSFX;
+    public AudioClip hitSFX;
+    public AudioClip loseJingle;
+    public AudioClip jumpSFX;
 
     public float intSpeed;
     public float endSpeed;
     public float jumpHeight;
-
-    public KeyCode jumpKey;
-    private bool jumpPress;
 
     public float decaySpeed;
 
@@ -28,24 +30,31 @@ public class JuanLukso : MonoBehaviour
     private bool roundEnd;
     private bool endDecaySpeed;
 
+    public bool moved;
+    private bool lost;
+
     public GameObject gameOverScreen;
 
     void Start()
     {
 
         roundEnd = false;
+        moved = false;
+        lost = false;
 
         rb = GetComponent<Rigidbody2D>();
         asource = GetComponent<AudioSource>();
+        anim = GetComponent<Animator>();
 
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(jumpKey))
-        {
-            jumpPress = true;
-        }
+
+        anim.SetFloat("Speed", rb.velocity.x);
+        anim.SetBool("Moved", moved);
+        anim.SetFloat("Height", rb.velocity.y);
+        anim.SetBool("Lost", lost);
 
         if (LuksoGameMaster.wonRound == 2 && !roundEnd)
         {
@@ -68,10 +77,11 @@ public class JuanLukso : MonoBehaviour
     IEnumerator RoundEnd(bool win)
     {
         Time.timeScale = slowTimeScale;
-        if (win) rb.AddForce(Vector2.up * jumpHeight * LuksoTimer.points);
+        asource.PlayOneShot(jumpSFX);
+        if (win) rb.AddForce( (Vector2.up * jumpHeight) + Vector2.up * jumpHeight * LuksoTimer.points);
         else if (!win)
         {
-            rb.AddForce(Vector2.up * jumpHeight * LuksoTimer.points * 0.8f); 
+            rb.AddForce((Vector2.up * jumpHeight * 5) + (Vector2.up *jumpHeight * LuksoTimer.points * 0.7f)); 
         }
         endRun = true;
         yield return new WaitForSecondsRealtime(waitTime1);
@@ -81,18 +91,27 @@ public class JuanLukso : MonoBehaviour
         endDecaySpeed = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Baka"))
+        if (col.gameObject.CompareTag("Baka") && !lost)
         {
+            lost = true;
+            asource.PlayOneShot(hitSFX);
             StartCoroutine(ActivateGameOverScreen());
+            rb.constraints = RigidbodyConstraints2D.FreezePosition;
         }
+
+        else if (col.gameObject.CompareTag("Win Zone"))
+        {
+            asource.PlayOneShot(landSFX);
+        }
+
     }
 
     IEnumerator ActivateGameOverScreen()
     {
         yield return new WaitForSecondsRealtime(2f);
-        asource.PlayOneShot(loseSFX);
+        asource.PlayOneShot(loseJingle);
         gameOverScreen.SetActive(true);
     }
 

@@ -135,7 +135,20 @@ public class LuksoTimer : MonoBehaviour
         if (col.gameObject.CompareTag("Lukso Meter"))
         {
             timerHits++;
-            if (timerHits % 4 == 1 && timerHits < timerHitsReq) juanRB.AddForce(Vector2.right * juanScript.intSpeed*4);
+            if (timerHits % 4 == 1 && timerHits < timerHitsReq)
+            {
+
+                juanRB.AddForce(Vector2.right * juanScript.intSpeed * 4);
+
+                if (!juanScript.moved)
+                {
+                    juanScript.moved = true;
+                }
+                else if (juanScript.moved)
+                {
+                    juanScript.moved = false;
+                }
+            }
         }
 
         if (col.gameObject.CompareTag("Red Spot"))
