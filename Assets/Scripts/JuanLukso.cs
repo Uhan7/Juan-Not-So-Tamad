@@ -31,7 +31,8 @@ public class JuanLukso : MonoBehaviour
     private bool endDecaySpeed;
 
     public bool moved;
-    private bool lost;
+    private bool roundLost;
+    private bool roundWon;
 
     public GameObject gameOverScreen;
 
@@ -40,7 +41,9 @@ public class JuanLukso : MonoBehaviour
 
         roundEnd = false;
         moved = false;
-        lost = false;
+
+        roundLost = false;
+        roundWon = false;
 
         rb = GetComponent<Rigidbody2D>();
         asource = GetComponent<AudioSource>();
@@ -54,7 +57,7 @@ public class JuanLukso : MonoBehaviour
         anim.SetFloat("Speed", rb.velocity.x);
         anim.SetBool("Moved", moved);
         anim.SetFloat("Height", rb.velocity.y);
-        anim.SetBool("Lost", lost);
+        anim.SetBool("Round Lost", roundLost);
 
         if (LuksoGameMaster.wonRound == 2 && !roundEnd)
         {
@@ -93,17 +96,19 @@ public class JuanLukso : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Baka") && !lost)
+        if (col.gameObject.CompareTag("Baka") && !roundLost)
         {
-            lost = true;
             asource.PlayOneShot(hitSFX);
             StartCoroutine(ActivateGameOverScreen());
             rb.constraints = RigidbodyConstraints2D.FreezePosition;
+            roundLost = true;
         }
 
-        else if (col.gameObject.CompareTag("Win Zone"))
+        else if (col.gameObject.CompareTag("Win Zone") && !roundWon)
         {
+            anim.SetTrigger("Win Zoned");
             asource.PlayOneShot(landSFX);
+            roundWon = true;
         }
 
     }

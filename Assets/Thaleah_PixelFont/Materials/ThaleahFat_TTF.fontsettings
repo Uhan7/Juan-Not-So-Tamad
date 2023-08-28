@@ -8,7 +8,7 @@ Font:
   m_PrefabAsset: {fileID: 0}
   m_Name: ThaleahFat_TTF
   serializedVersion: 5
-  m_LineSpacing: 16.09375
+  m_LineSpacing: 16
   m_DefaultMaterial: {fileID: 2100000, guid: dbf917f69b5e0433f8ab358fd1370ec0, type: 2}
   m_FontSize: 16
   m_Texture: {fileID: 2800000, guid: b1f696ffc162245e7b78a96e8905b8c0, type: 3}

@@ -30,6 +30,7 @@ public class LuksoTimer : MonoBehaviour
     public GameObject[] FXs;
     private GameObject chosenFX;
     public GameObject pulseFX;
+    public GameObject bgPulse;
 
     public AudioClip YellowSFX;
     public AudioClip OrangeSFX;
@@ -74,6 +75,8 @@ public class LuksoTimer : MonoBehaviour
             var PFX = Instantiate(pulseFX) as GameObject;
             PFX.transform.SetParent(canvas.transform, false);
             PFX.transform.position = new Vector2(160, transform.position.y);
+
+            Instantiate(bgPulse, new Vector2(0, 0), transform.rotation);
 
             if (chosenFX == FXs[2])
             {
@@ -177,4 +180,5 @@ public class LuksoTimer : MonoBehaviour
             col.gameObject.CompareTag("Orange Spot") ||
             col.gameObject.CompareTag("Yellow Spot")) touching--;
     }
+
 }

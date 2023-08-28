@@ -13,5 +13,6 @@ public class Dialogue
 
     [TextArea(2, 4)]
     public string[] sentences;
+    public AudioClip voice;
 
 }
