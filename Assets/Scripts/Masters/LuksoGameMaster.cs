@@ -9,6 +9,9 @@ public class LuksoGameMaster : MonoBehaviour
     public GameObject luksoTimer;
     private LuksoTimer luksoTimerScript;
 
+    private bool hideMeter;
+    public GameObject meter;
+
     public int reqPoints;
 
     private AudioSource asource;
@@ -19,6 +22,8 @@ public class LuksoGameMaster : MonoBehaviour
     public static int wonRound;
     public bool roundEnd;
 
+    public GameObject blackscreen;
+
     void Start()
     {
 
@@ -27,6 +32,7 @@ public class LuksoGameMaster : MonoBehaviour
 
         luksoTimerScript = luksoTimer.GetComponent<LuksoTimer>();
         asource = GetComponent<AudioSource>();
+        Time.timeScale = 0;
         StartCoroutine(StartBeep());
     }
 
@@ -44,20 +50,43 @@ public class LuksoGameMaster : MonoBehaviour
                 wonRound = 1;
                 roundEnd = true;
             }
-        }
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            StartCoroutine(HideMeter());
+
         }
+    }
+
+    private void FixedUpdate()
+    {
+        if (hideMeter) meter.transform.localPosition = new Vector2(0, meter.transform.localPosition.y - 3);
     }
 
     IEnumerator StartBeep()
     {
+        yield return new WaitForSecondsRealtime(1f);
         asource.PlayOneShot(beep);
-        Time.timeScale = 0;
         yield return new WaitForSecondsRealtime(waitTime);
         Time.timeScale = 1;
+    }
+
+    IEnumerator HideMeter()
+    {
+        yield return new WaitForSecondsRealtime(.25f);
+        hideMeter = true;
+        yield return new WaitForSecondsRealtime(2f);
+        hideMeter = false;
+        Destroy(meter);
+    }
+
+    public void Invoker(string funcName)
+    {
+        blackscreen.SetActive(true);
+        Invoke(funcName, 3.5f);
+    }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 }

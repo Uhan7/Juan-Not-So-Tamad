@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JuanLuksoIntro : MonoBehaviour
+public class LuksoIntroJuan : MonoBehaviour
 {
     private Rigidbody2D rb;
     private AudioSource asource;

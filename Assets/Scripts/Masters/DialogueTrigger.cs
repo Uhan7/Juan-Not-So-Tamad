@@ -10,6 +10,8 @@ public class DialogueTrigger : MonoBehaviour
     public bool trigger;
     public bool collide;
 
+    public string nameOfCol;
+
     public bool destroyAfterTouch;
     public bool destroyAfterTalk;
     public bool destroySomethingAfterTalk;
@@ -19,6 +21,10 @@ public class DialogueTrigger : MonoBehaviour
     public GameObject otherDialogueTrigger;
     public GameObject somethingToDestroy;
     public float waitTime;
+    public float destroyWaitTime;
+
+    public bool activateSomethingAfterTalk;
+    public GameObject[] thingToActivate;
 
     public void TriggerDialogue()
     {
@@ -35,7 +41,8 @@ public class DialogueTrigger : MonoBehaviour
         if (canWaitAfterTalk && !DialogueManager.openWindow)
         {
             if (startOtherDialogueAfterTalk) StartCoroutine(StartOtherDialogue());
-            if (destroySomethingAfterTalk) Destroy(somethingToDestroy, waitTime);
+            if (destroySomethingAfterTalk) Destroy(somethingToDestroy, destroyWaitTime);
+            if (activateSomethingAfterTalk) Invoke("SpawnThings", waitTime);
             if (destroyAfterTalk) Destroy(gameObject, waitTime + 0.05f);
             if (doGoNext)GoNext();
         }
@@ -44,7 +51,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Juan"))
+        if (col.gameObject.name == nameOfCol)
         {
             if (trigger) TriggerDialogue();
             if (destroyAfterTouch) Destroy(gameObject);
@@ -53,7 +60,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Juan"))
+        if (col.gameObject.name == nameOfCol)
         {
             if (collide) TriggerDialogue();
             if (destroyAfterTouch) Destroy(gameObject);
@@ -69,6 +76,14 @@ public class DialogueTrigger : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(waitTime);
         FindObjectOfType<DialogueManager>().StartDialogue(otherDialogueTrigger.GetComponent<DialogueTrigger>().dialogue);
+    }
+
+    public void SpawnThings()
+    {
+        foreach (GameObject thing in thingToActivate)
+        {
+            thing.SetActive(true);
+        }
     }
 
 }

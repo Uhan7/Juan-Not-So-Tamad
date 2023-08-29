@@ -1,0 +1,51 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class GeneralSceneTransitions : MonoBehaviour
+{
+
+    private AudioSource asource;
+    public AudioClip soundToPlay;
+
+    public GameObject blackscreen;
+
+    public bool trigger;
+    public bool collide;
+
+    public bool playSound;
+
+    public string nameOfToucher;
+
+    public string sceneToGo;
+
+    private void Start()
+    {
+        asource = GetComponent<AudioSource>();
+    }
+
+    public void Waiter(string sceneName)
+    {
+        blackscreen.SetActive(true);
+        if (playSound) asource.PlayOneShot(soundToPlay);
+        StartCoroutine(GoToScene(sceneName));
+    }
+
+    IEnumerator GoToScene(string sceneName)
+    {
+        yield return new WaitForSecondsRealtime(4f);
+        SceneManager.LoadScene(sceneName);
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (trigger && col.gameObject.name == nameOfToucher) Waiter(sceneToGo);
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (collide && col.gameObject.name == nameOfToucher) Waiter(sceneToGo);
+    }
+
+}

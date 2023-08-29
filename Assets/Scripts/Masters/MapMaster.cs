@@ -16,7 +16,7 @@ public class MapMaster : MonoBehaviour
         Invoke(funcName, 3.5f);
     }
 
-    public void GoLuksoGame()
+    public void GoLuksoIntro()
     {
         SceneManager.LoadScene("Lukso Game Intro");
     }

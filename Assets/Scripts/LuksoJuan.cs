@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JuanLukso : MonoBehaviour
+public class LuksoJuan : MonoBehaviour
 {
 
     private Rigidbody2D rb;
@@ -10,7 +10,6 @@ public class JuanLukso : MonoBehaviour
 
     private AudioSource asource;
 
-    public AudioClip winJingle;
     public AudioClip landSFX;
     public AudioClip hitSFX;
     public AudioClip loseJingle;
@@ -34,7 +33,14 @@ public class JuanLukso : MonoBehaviour
     private bool roundLost;
     private bool roundWon;
 
+    public GameObject backgroundNormal;
+
     public GameObject gameOverScreen;
+
+    public GameObject cam1;
+    public GameObject cam2;
+
+    public GameObject lorenzo;
 
     void Start()
     {
@@ -80,6 +86,7 @@ public class JuanLukso : MonoBehaviour
     IEnumerator RoundEnd(bool win)
     {
         Time.timeScale = slowTimeScale;
+        backgroundNormal.SetActive(true);
         asource.PlayOneShot(jumpSFX);
         if (win) rb.AddForce( (Vector2.up * jumpHeight) + Vector2.up * jumpHeight * LuksoTimer.points);
         else if (!win)
@@ -104,20 +111,29 @@ public class JuanLukso : MonoBehaviour
             roundLost = true;
         }
 
-        else if (col.gameObject.CompareTag("Win Zone") && !roundWon)
+        else if (col.gameObject.CompareTag("Win Zone") && !roundWon && !roundLost)
         {
             anim.SetTrigger("Win Zoned");
             asource.PlayOneShot(landSFX);
             roundWon = true;
+            StartCoroutine(LorenzoTurn());
         }
 
     }
 
     IEnumerator ActivateGameOverScreen()
     {
-        yield return new WaitForSecondsRealtime(2f);
+        yield return new WaitForSecondsRealtime(1.25f);
         asource.PlayOneShot(loseJingle);
         gameOverScreen.SetActive(true);
+    }
+
+    IEnumerator LorenzoTurn()
+    {
+        yield return new WaitForSecondsRealtime(1.25f);
+        cam1.SetActive(false);
+        cam2.SetActive(true);
+        lorenzo.SetActive(true);
     }
 
 }

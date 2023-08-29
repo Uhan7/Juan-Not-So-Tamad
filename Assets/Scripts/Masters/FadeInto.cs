@@ -17,9 +17,11 @@ public class FadeInto : MonoBehaviour
     private void Awake()
     {
         timeElapsed = 0;
-        temp = GetComponent<Image>().color;
+        if (GetComponent<Image>() != null) temp = GetComponent<Image>().color;
+        else temp = GetComponent<SpriteRenderer>().color;
         temp.a = 0f;
-        GetComponent<Image>().color = new Color(temp.r, temp.g, temp.b, startA);
+        if (GetComponent<Image>() != null) GetComponent<Image>().color = new Color(temp.r, temp.g, temp.b, startA);
+        else GetComponent<SpriteRenderer>().color = new Color(temp.r, temp.g, temp.b, startA);
     }
 
     private void Start()
@@ -32,7 +34,8 @@ public class FadeInto : MonoBehaviour
         if (gameObject.activeInHierarchy)
         {
             temp.a = Mathf.Lerp(startA / 255f, endA / 255f, timeElapsed / time);
-            GetComponent<Image>().color = new Color(temp.r, temp.g, temp.b, temp.a);
+            if (GetComponent<Image>() != null) GetComponent<Image>().color = new Color(temp.r, temp.g, temp.b, temp.a);
+            else GetComponent<SpriteRenderer>().color = new Color(temp.r, temp.g, temp.b, temp.a);
             timeElapsed += Time.deltaTime;
         }
     }

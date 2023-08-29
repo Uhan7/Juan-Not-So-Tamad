@@ -19,7 +19,7 @@ public class LuksoTimer : MonoBehaviour
     public float brokeTime;
 
     public GameObject juan;
-    private JuanLukso juanScript;
+    private LuksoJuan juanScript;
     private Rigidbody2D juanRB;
 
     private int touching;
@@ -52,7 +52,7 @@ public class LuksoTimer : MonoBehaviour
         anim = GetComponent<Animator>();
         asource = GetComponent<AudioSource>();
 
-        juanScript = juan.GetComponent<JuanLukso>();
+        juanScript = juan.GetComponent<LuksoJuan>();
         juanRB = juan.GetComponent<Rigidbody2D>();
 
         speedChanged = false;
@@ -64,7 +64,7 @@ public class LuksoTimer : MonoBehaviour
 
         anim.SetBool("Broke", broke);
 
-        if (Input.GetKeyDown(KeyCode.Space) && touching > 0 && !broke)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && touching > 0 && !broke)
         {
             asource.PlayOneShot(chosenSFX);
 
@@ -91,7 +91,7 @@ public class LuksoTimer : MonoBehaviour
                 points += 3;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && touching <= 0 && !broke)
+        else if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && touching <= 0 && !broke)
         {
             StartCoroutine(Break());
         }
