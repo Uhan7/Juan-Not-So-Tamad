@@ -998,8 +998,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125.5, y: -27}
-  m_SizeDelta: {x: 13, y: 13}
+  m_AnchoredPosition: {x: 125.5, y: -25}
+  m_SizeDelta: {x: 13, y: 14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &483605627
 MonoBehaviour:
@@ -1098,7 +1098,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 189137068, guid: 3be08fd5d8b2f4919b10082b980b748f, type: 3}
-    m_PressedSprite: {fileID: -1420534866, guid: 3be08fd5d8b2f4919b10082b980b748f, type: 3}
+    m_PressedSprite: {fileID: -1444530593, guid: 3be08fd5d8b2f4919b10082b980b748f, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -1163,8 +1163,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125.5, y: -27}
-  m_SizeDelta: {x: 13, y: 13}
+  m_AnchoredPosition: {x: 125.5, y: -25}
+  m_SizeDelta: {x: 13, y: 14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &500605348
 AudioSource:
