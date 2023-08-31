@@ -66,6 +66,7 @@ public class LuksoGameMaster : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         asource.PlayOneShot(beep);
         yield return new WaitForSecondsRealtime(waitTime);
+        luksoTimer.SetActive(true);
         Time.timeScale = 1;
     }
 
