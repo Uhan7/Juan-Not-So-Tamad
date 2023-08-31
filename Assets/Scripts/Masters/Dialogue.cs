@@ -15,4 +15,6 @@ public class Dialogue
     public string[] sentences;
     public AudioClip voice;
 
+    public bool flipFace;
+
 }

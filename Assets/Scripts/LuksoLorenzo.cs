@@ -7,7 +7,11 @@ public class LuksoLorenzo : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator anim;
+
     private AudioSource asource;
+    public AudioClip runSound1;
+    public AudioClip runSound2;
+    public AudioClip jumpSound;
 
     public float jumpHeight;
 
@@ -29,6 +33,12 @@ public class LuksoLorenzo : MonoBehaviour
         StartCoroutine(LuksoScene());
     }
 
+    private void Update()
+    {
+        anim.SetFloat("Speed", rb.velocity.x);
+        anim.SetFloat("Height", rb.velocity.y);
+    }
+
     void FixedUpdate()
     {
         if (run) rb.velocity = new Vector2 (runSpeed, rb.velocity.y);
@@ -40,6 +50,7 @@ public class LuksoLorenzo : MonoBehaviour
         yield return new WaitForSeconds(2f);
         run = true;
         yield return new WaitForSeconds(timeTillJump);
+        asource.PlayOneShot(jumpSound);
         rb.AddForce(Vector2.up * jumpHeight);
         yield return new WaitForSeconds(timeTillDecaySpeed);
         run = false;
@@ -48,6 +59,16 @@ public class LuksoLorenzo : MonoBehaviour
         transform.localScale = new Vector3(-1, 1, 1);
         yield return new WaitForSeconds(.1f);
         dialogueToActivate.SetActive(true);
+    }
+
+    public void RunSound1()
+    {
+        asource.PlayOneShot(runSound1);
+    }
+
+    public void RunSound2()
+    {
+        asource.PlayOneShot(runSound2);
     }
 
 }

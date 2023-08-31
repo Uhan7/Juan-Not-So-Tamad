@@ -76,7 +76,7 @@ public class LuksoTimer : MonoBehaviour
             PFX.transform.SetParent(canvas.transform, false);
             PFX.transform.position = new Vector2(160, transform.position.y);
 
-            Instantiate(bgPulse, new Vector2(0, 0), transform.rotation);
+            StartCoroutine(BGPulse());
 
             if (chosenFX == FXs[2])
             {
@@ -114,6 +114,26 @@ public class LuksoTimer : MonoBehaviour
         yield return new WaitForSecondsRealtime(brokeTime / 4);
         meter.transform.localPosition = new Vector2(0, 0);
         broke = false;
+    }
+
+    IEnumerator BGPulse()
+    {
+        float timeElapsed = 0;
+
+        Color temp = bgPulse.GetComponent<SpriteRenderer>().color;
+
+        bgPulse.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
+
+        while (timeElapsed < .45f)
+        {
+            temp.r = Mathf.Lerp(255f / 255f, 150f / 255f, timeElapsed / .45f);
+            temp.g = Mathf.Lerp(255f / 255f, 150f / 255f, timeElapsed / .45f);
+            temp.b = Mathf.Lerp(255f / 255f, 150f / 255f, timeElapsed / .45f);
+            bgPulse.GetComponent<SpriteRenderer>().color = new Color(temp.r, temp.g, temp.b, 255);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        // valueToLerp = endValue;
     }
 
     void FixedUpdate()

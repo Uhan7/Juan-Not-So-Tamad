@@ -44,6 +44,8 @@ public class DialogueManager : MonoBehaviour
 
         nametext.text = dialogue.name;
         nametextShadow.text = dialogue.name;
+        if (dialogue.flipFace) charaFace.rectTransform.localScale = new Vector3(-1, 1, 1);
+        else charaFace.rectTransform.localScale = new Vector3(1, 1, 1);
         charaFace.sprite = dialogue.faceSprite;
         voice = dialogue.voice;
 
