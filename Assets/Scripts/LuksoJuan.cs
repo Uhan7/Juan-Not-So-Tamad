@@ -131,9 +131,12 @@ public class LuksoJuan : MonoBehaviour
     IEnumerator LorenzoTurn()
     {
         yield return new WaitForSecondsRealtime(1.25f);
-        cam1.SetActive(false);
-        cam2.SetActive(true);
-        lorenzo.SetActive(true);
+        if (!roundLost)
+        {
+            cam1.SetActive(false);
+            cam2.SetActive(true);
+            lorenzo.SetActive(true);
+        }
     }
 
 }

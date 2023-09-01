@@ -350,7 +350,7 @@ MonoBehaviour:
   otherASource: {fileID: 0}
   shutUpSound: 0
   nameOfToucher: Juan
-  sceneToGo: Lukso Round 2
+  sceneToGo: Lukso Round 1
 --- !u!61 &77305890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2003,7 +2003,7 @@ MonoBehaviour:
   doGoNext: 1
   otherDialogueTrigger: {fileID: 1148632565}
   somethingToDestroy: {fileID: 403759871}
-  waitTime: 1
+  waitTime: 0.5
   destroyWaitTime: 0
   activateSomethingAfterTalk: 0
   thingToActivate: []
@@ -2955,7 +2955,7 @@ MonoBehaviour:
     sentences:
     - That bar on the bottom is the height of your jump.
     - If you got a perfect score, it flashes to let you know.
-    - Your goal is always 70% of the max score to pass.
+    - Your goal is at least 70% of the max score to pass.
     voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
     flipFace: 1
   trigger: 0

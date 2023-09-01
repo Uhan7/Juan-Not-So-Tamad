@@ -68,7 +68,7 @@ public class LuksoGameMaster : MonoBehaviour
 
     IEnumerator StartBeep()
     {
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(1.5f);
         asource.PlayOneShot(beep);
         yield return new WaitForSecondsRealtime(waitTime);
         luksoTimer.SetActive(true);
@@ -89,7 +89,7 @@ public class LuksoGameMaster : MonoBehaviour
     public void Invoker(string funcName)
     {
         blackscreen.SetActive(true);
-        Invoke(funcName, 3.5f);
+        StartCoroutine(funcName);
     }
 
     public void InvokerWithPause(string funcName)
