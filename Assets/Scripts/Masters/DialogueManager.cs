@@ -100,8 +100,7 @@ public class DialogueManager : MonoBehaviour
                     letter == ';' ||
                     letter == ':' ||
                     letter == '"' ||
-                    letter == '(' ||
-                    letter == ')') yield return new WaitForSeconds(pausesSpeed);
+                    letter == '(' ) yield return new WaitForSeconds(pausesSpeed);
                 if (letter == '.' ||
                     letter == '!') yield return new WaitForSeconds(periodSpeed);
             }

@@ -280,7 +280,7 @@ MonoBehaviour:
     name: LORENZO
     faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
     sentences:
-    - Ok, but that's not an excuse to what you're doing.
+    - Okay, but that's not an excuse to what you're doing.
     - You can't be slacking off this much.
     voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
     flipFace: 0

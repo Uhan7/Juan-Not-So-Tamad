@@ -2200,7 +2200,7 @@ MonoBehaviour:
     sentences:
     - (Juan, you know what to do.)
     - (Time the hits right, and jump that baka.)
-    - (Piece. of. cake. hahahahahaha!)
+    - (Piece. of. cake! hahahahahaha!)
     voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
     flipFace: 0
   trigger: 0
@@ -4059,7 +4059,7 @@ MonoBehaviour:
     - it's what you should focus on in luksong baka, specifically.
     - A timer ticks back and forth.
     - And you must time a left mouse click, or a space bar tap.
-    - How well you time is equates to how high your jump will be.
+    - How well you time it equates to how high your jump will be.
     voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
     flipFace: 1
   trigger: 0

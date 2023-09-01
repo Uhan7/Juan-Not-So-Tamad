@@ -18,11 +18,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Luksong Baka/Lukso Game Intro.unity
     guid: c0e38899f0c4043c2b83da1285113edd
   - enabled: 1
+    path: Assets/Scenes/Luksong Baka/Lukso Round 4.unity
+    guid: 6f092a4e6ad1b4537ba13adaeb382b32
+  - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: 9fc3a1990e5ba4ba58caf6bd256d6d1d
   - enabled: 1
     path: Assets/Scenes/Luksong Baka/Lukso Round 1.unity
     guid: 07cb4b22646584804991cee9d6b8c940
+  - enabled: 1
+    path: Assets/Scenes/Luksong Baka/Lukso Round 5.unity
+    guid: 51b86ac8a82fb45e599284e3491eed60
+  - enabled: 1
+    path: Assets/Scenes/Luksong Baka/Lukso Round 3.unity
+    guid: 9da33960b47d64c8383a2acfd847ff7b
   - enabled: 1
     path: Assets/Scenes/Luksong Baka/Lukso Tutorial.unity
     guid: 84a4285919f3b4d7698e7eb7f0f9d66c

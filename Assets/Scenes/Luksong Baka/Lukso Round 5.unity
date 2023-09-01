@@ -512,7 +512,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Luksong Baka:
 
-    Round 4'
+    Final Round'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
   m_sharedMaterial: {fileID: -7694693843793642802, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
@@ -892,9 +892,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   luksoTimer: {fileID: 1108667410}
   meter: {fileID: 1858339599}
-  reqPoints: 42
-  beep: {fileID: 8300000, guid: e67bfb9d046cb4cb988d3c8f53e20eac, type: 3}
-  waitTime: 1.818
+  reqPoints: 120
+  beep: {fileID: 8300000, guid: e3dbf34f8db1c448ca079987beacd223, type: 3}
+  waitTime: 1.04
   roundEnd: 0
   blackscreen: {fileID: 217459857}
   otherBlackscreen: {fileID: 1120325489}
@@ -1541,7 +1541,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 1172420359, guid: a58559ceeb14f4462b9d17cead529604, type: 3}
+  m_Sprite: {fileID: -702919206, guid: a58559ceeb14f4462b9d17cead529604, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1661,7 +1661,7 @@ MonoBehaviour:
   fillSpeed: 0.05
   barFlasher: {fileID: 403717791}
   flashRate: 0.2
-  maxPoints: 60
+  maxPoints: 171
   timer: {fileID: 1108667410}
 --- !u!95 &304470144
 Animator:
@@ -1949,7 +1949,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Luksong Baka:
 
-    Round 4'
+    Final Round'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
   m_sharedMaterial: {fileID: -7694693843793642802, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
@@ -2072,7 +2072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9377a38fea3142c89a3e52bbe65db29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundToPlay: {fileID: 8300000, guid: 16a45f283889b45018bd5d1c617dc783, type: 3}
+  soundToPlay: {fileID: 8300000, guid: 908bbf34435dd4de2b2687316183c615, type: 3}
   blackscreen: {fileID: 217459857}
   quickie: 0
   trigger: 1
@@ -2081,7 +2081,7 @@ MonoBehaviour:
   otherASource: {fileID: 0}
   shutUpSound: 0
   nameOfToucher: Juan
-  sceneToGo: Lukso Round 4
+  sceneToGo: Lukso Round 5
 --- !u!61 &392954337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3391,7 +3391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720971816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.5, y: -4.9, z: 0}
+  m_LocalPosition: {x: 11.5, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3458,7 +3458,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'luksong baka:
 
-    Round 3'
+    Final Round'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
   m_sharedMaterial: {fileID: -7694693843793642802, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
@@ -3908,7 +3908,7 @@ MonoBehaviour:
     name: Lorenzo
     faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
     sentences:
-    - so, how's it goin?
+    - '*pant* so, juan.. *pant* *pant*'
     voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
     flipFace: 1
   trigger: 1
@@ -3973,7 +3973,10 @@ MonoBehaviour:
     name: Juan
     faceSprite: {fileID: 21300000, guid: 6f2ec876133e349409fd936965c932b7, type: 3}
     sentences:
-    - not a sweat.
+    - you gettin' tired, lorenzo?
+    - I kinda never gave it my all whenever we would play this.
+    - But now, now that something big is on the line.
+    - I feel the heeeeaaattt! hahaha!
     voice: {fileID: 8300000, guid: 32ef3df3a5e8b4dabb90450dc4ded0f3, type: 3}
     flipFace: 0
   trigger: 0
@@ -4521,9 +4524,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 10cabdccfdb964ac38d58c2936343d74, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a5008d703da914fafa76295bb01d7267, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.75
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4765,10 +4768,10 @@ MonoBehaviour:
     name: Lorenzo
     faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
     sentences:
-    - haha. sure.
-    - we're getting there, juan.
-    - one of us will fall soon.
-    - I won't make it easy. alright?
+    - '*pant* yeah uh.. alright.'
+    - '*pant* *pant* see I''m running out of *pant*'
+    - ..c-cones to use so.. *coughs*
+    - I strongly doubt you'll get through *coughs* ..the final round.
     voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
     flipFace: 1
   trigger: 0
@@ -4986,7 +4989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSFX: {fileID: 8300000, guid: 9653920d6e359492faadad71671021ba, type: 3}
-  speed: 81.55
+  speed: 144.25
   brokeTime: 1
   juan: {fileID: 1840987120}
   meter: {fileID: 1858339599}
@@ -4997,10 +5000,10 @@ MonoBehaviour:
   - {fileID: 7078302245697152810, guid: d866cfae9bbac4e41be26e54b9c16037, type: 3}
   pulseFX: {fileID: 7078302245697152810, guid: 735ff6e8e30804d4d98eebeea510ed00, type: 3}
   bgPulse: {fileID: 2002258132}
-  YellowSFX: {fileID: 8300000, guid: acdab9c7d6b824b11bf318df7c360232, type: 3}
-  OrangeSFX: {fileID: 8300000, guid: 842135eb4a5e64757ab008b95b38a0b9, type: 3}
-  RedSFX: {fileID: 8300000, guid: e8b20143ab89e4ef8a69d9a4d01ac8b2, type: 3}
-  timerHitsReq: 65
+  YellowSFX: {fileID: 8300000, guid: 67393d9a87a5f42b99f9c32fdb4d8b92, type: 3}
+  OrangeSFX: {fileID: 8300000, guid: 7c0c9eb99b0e6438da79e192df6bbe05, type: 3}
+  RedSFX: {fileID: 8300000, guid: bb3ab1ada201f4eb8a4b26e47ceed7e6, type: 3}
+  timerHitsReq: 169
   timerHits: 0
 --- !u!50 &1108667416
 Rigidbody2D:
@@ -5367,7 +5370,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 1172420359, guid: a58559ceeb14f4462b9d17cead529604, type: 3}
+  m_Sprite: {fileID: -702919206, guid: a58559ceeb14f4462b9d17cead529604, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5440,9 +5443,9 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.55, y: -3}
-      - {x: 0.55, y: -0.5}
-      - {x: 0, y: 0.8}
-      - {x: -0.55, y: -0.5}
+      - {x: 0.55, y: 1.5}
+      - {x: 0, y: 2.8}
+      - {x: -0.55, y: 1.5}
       - {x: -0.55, y: -3}
 --- !u!1 &1292329045
 GameObject:
@@ -5761,7 +5764,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Luksong Baka:
 
-    Round 3'
+    Final Round'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
   m_sharedMaterial: {fileID: -7694693843793642802, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
@@ -5896,7 +5899,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1172420359, guid: a58559ceeb14f4462b9d17cead529604, type: 3}
+  m_Sprite: {fileID: -702919206, guid: a58559ceeb14f4462b9d17cead529604, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6412,7 +6415,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'luksong baka:
 
-    Round 3'
+    Final Round'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
   m_sharedMaterial: {fileID: -7694693843793642802, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
@@ -7093,10 +7096,10 @@ MonoBehaviour:
   runSound1: {fileID: 8300000, guid: d19e528ef54064b0aa6ff10becb9e285, type: 3}
   runSound2: {fileID: 8300000, guid: 3711706780fe547979ab9c89622b3ef1, type: 3}
   jumpSound: {fileID: 8300000, guid: 58489885478f44207b91b1f382d303f4, type: 3}
-  jumpHeight: 750
-  runSpeed: 7.4
-  timeTillJump: 2.65
-  timeTillDecaySpeed: 1.65
+  jumpHeight: 850
+  runSpeed: 6.8
+  timeTillJump: 2.75
+  timeTillDecaySpeed: 1.8
   decaySpeed: 0.6
   dialogueToActivate: {fileID: 826548995}
 --- !u!95 &1751943111
@@ -7356,7 +7359,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -149, y: 3}
+  m_Offset: {x: -152, y: 3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7367,7 +7370,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 2}
+  m_Size: {x: 9, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893777
 BoxCollider2D:
@@ -7382,7 +7385,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 149, y: 3}
+  m_Offset: {x: 152, y: 3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7393,7 +7396,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 2}
+  m_Size: {x: 9, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893778
 BoxCollider2D:
@@ -7419,7 +7422,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 3, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893779
 BoxCollider2D:
@@ -7445,7 +7448,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 3, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893780
 BoxCollider2D:
@@ -7471,7 +7474,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 3, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893781
 BoxCollider2D:
@@ -7497,7 +7500,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 3, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893782
 BoxCollider2D:
@@ -7523,7 +7526,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 3, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893783
 BoxCollider2D:
@@ -7549,7 +7552,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 3, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893784
 BoxCollider2D:
@@ -7575,7 +7578,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 3, y: 2}
   m_EdgeRadius: 0
 --- !u!1 &1797709413
 GameObject:
@@ -7689,7 +7692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hotspotCount: 0
-  oneBarCount: 0.4545
+  oneBarCount: 0.262
   spawner: {fileID: 1840042638}
   hotspot:
   - {fileID: 6145096907447258679, guid: cd34794233a82405399e2a68735286f9, type: 3}
@@ -7699,8 +7702,8 @@ MonoBehaviour:
   - {fileID: 6145096907447258679, guid: 0336f4b4bd1c14fa88fe72bc164894d5, type: 3}
   - {fileID: 6145096907447258679, guid: fb35c70994ce74b829680ac377fff6c7, type: 3}
   - {fileID: 6145096907447258679, guid: 139ee71c3b6044f91aa3f998f8cc6dcb, type: 3}
-  wave: 04000000040000000c0000000c0000000c0000000c0000001400000014000000140000001c0000001c00000024000000240000002c0000002c0000002c0000002c00000034000000340000003c000000
-  loc: 0200000004000000010000000300000006000000070000000000000002000000050000000400000007000000040000000500000001000000030000000600000008000000020000000600000002000000
+  wave: 04000000040000000c0000000c00000014000000140000001400000014000000140000001c0000001c00000024000000240000002c0000002c0000002c0000003400000034000000340000003c0000003c0000003c00000044000000440000004c0000004c0000004c0000004c00000054000000540000005c0000005c00000064000000640000006c0000006c0000006c0000006c0000006c00000074000000740000007c0000007c0000007c00000084000000840000008c0000008c0000008c0000009400000094000000940000009c0000009c0000009c0000009c000000a4000000
+  loc: 030000000400000001000000060000000000000002000000030000000500000007000000040000000500000000000000030000000100000005000000060000000200000004000000070000000100000002000000060000000000000004000000020000000300000004000000050000000400000006000000040000000500000003000000070000000100000002000000030000000500000006000000000000000400000001000000060000000800000002000000040000000300000005000000080000000100000006000000070000000200000003000000040000000500000006000000
 --- !u!1 &1840987120
 GameObject:
   m_ObjectHideFlags: 0
@@ -7800,14 +7803,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   landSFX: {fileID: 8300000, guid: 88cdd3945cf50449280a4461e67ebd4f, type: 3}
   hitSFX: {fileID: 8300000, guid: c774c3f019f7a4da4b585d25d5c25008, type: 3}
-  loseJingle: {fileID: 8300000, guid: b2d8fafc547404df8b2e7d485c37e4bf, type: 3}
+  loseJingle: {fileID: 8300000, guid: 393c446061bfc4633a0e0f539b3e7a83, type: 3}
   jumpSFX: {fileID: 8300000, guid: 58489885478f44207b91b1f382d303f4, type: 3}
-  intSpeed: 175
+  intSpeed: 66.666664
   endSpeed: 6
-  jumpHeight: 16
+  jumpHeight: 9.25
   decaySpeed: 0.8
   slowTimeScale: 0.2
-  waitTime1: 2
+  waitTime1: 2.05
   waitTime2: 0.85
   moved: 0
   backgroundNormal: {fileID: 1973176025}
@@ -8080,7 +8083,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Luksong Baka:
 
-    Round 3'
+    Final Round'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
   m_sharedMaterial: {fileID: -7694693843793642802, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}

@@ -1354,8 +1354,8 @@ MonoBehaviour:
     name: Director
     faceSprite: {fileID: 2096986689, guid: c488cb8da63684169b29fc133abddcbf, type: 3}
     sentences:
-    - listen juan
-    - I'm afraid that your grades have fallen quite a lot
+    - Juan, I have something important to say.
+    - I'm afraid that your grades have fallen quite a lot.
     - You're on very thin ice.
     voice: {fileID: 8300000, guid: 3c047f32d50d24c429dacf7782099590, type: 3}
     flipFace: 0
@@ -2964,9 +2964,9 @@ MonoBehaviour:
     name: Student
     faceSprite: {fileID: -270192884, guid: c488cb8da63684169b29fc133abddcbf, type: 3}
     sentences:
-    - Hey, have you hear about Juan?
-    - He got called by the teacher...
-    - cause he nearly got kicked out?!
+    - Hey, have you heard about Juan?
+    - He got called by the teacher.
+    - and I heard he nearly got kicked out?!
     voice: {fileID: 8300000, guid: f6ef5d3bbc10e46b5946999793232ef5, type: 3}
     flipFace: 0
   trigger: 1
