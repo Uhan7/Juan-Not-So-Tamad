@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lukso Game Intro.unity
     guid: c0e38899f0c4043c2b83da1285113edd
+  - enabled: 1
+    path: Assets/Scenes/Home.unity
+    guid: 9fc3a1990e5ba4ba58caf6bd256d6d1d
   m_configObjects: {}

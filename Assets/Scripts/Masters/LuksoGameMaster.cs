@@ -21,12 +21,17 @@ public class LuksoGameMaster : MonoBehaviour
 
     public static int wonRound;
     public bool roundEnd;
-
+        
     public GameObject blackscreen;
+    public GameObject otherBlackscreen;
+
+    public GameObject pauseItems;
+    public GameObject fillBar;
 
     void Start()
     {
-
+        pauseItems.SetActive(false);
+        fillBar.SetActive(false);
         wonRound = 0;
         roundEnd = false;
 
@@ -67,6 +72,8 @@ public class LuksoGameMaster : MonoBehaviour
         asource.PlayOneShot(beep);
         yield return new WaitForSecondsRealtime(waitTime);
         luksoTimer.SetActive(true);
+        pauseItems.SetActive(true);
+        fillBar.SetActive(true);
         Time.timeScale = 1;
     }
 
@@ -85,9 +92,25 @@ public class LuksoGameMaster : MonoBehaviour
         Invoke(funcName, 3.5f);
     }
 
-    public void ReloadScene()
+    public void InvokerWithPause(string funcName)
     {
+        blackscreen.SetActive(true);
+        StartCoroutine(funcName);
+        Time.timeScale = 0;
+    }
+
+    IEnumerator ReloadScene()
+    {
+        blackscreen.SetActive(false);
+        otherBlackscreen.SetActive(true);
+        yield return new WaitForSecondsRealtime(3.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    IEnumerator BackToHome()
+    {
+        yield return new WaitForSecondsRealtime(3.5f);
+        SceneManager.LoadScene("Home");
     }
 
 }

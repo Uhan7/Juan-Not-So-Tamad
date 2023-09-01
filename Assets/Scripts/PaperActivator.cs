@@ -9,12 +9,11 @@ public class PaperActivator : MonoBehaviour
 
     public void Activate(int paperIndex)
     {
-        paper[paperIndex].SetActive(true);
-    }
-
-    public void Deactivate(int paperIndex)
-    {
-        paper[paperIndex].SetActive(false);
+        foreach (GameObject slip in paper)
+        {
+            if (slip != paper[paperIndex] && GameObject.Find("BTOut") == null) slip.SetActive(false);
+        }
+        if (GameObject.Find("BTOut") == null) paper[paperIndex].SetActive(true);
     }
 
 }

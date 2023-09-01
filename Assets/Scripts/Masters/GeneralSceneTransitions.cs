@@ -11,10 +11,15 @@ public class GeneralSceneTransitions : MonoBehaviour
 
     public GameObject blackscreen;
 
+    public bool quickie;
+
     public bool trigger;
     public bool collide;
 
     public bool playSound;
+
+    public AudioSource otherASource;
+    public bool shutUpSound;
 
     public string nameOfToucher;
 
@@ -27,14 +32,16 @@ public class GeneralSceneTransitions : MonoBehaviour
 
     public void Waiter(string sceneName)
     {
-        blackscreen.SetActive(true);
+        if (blackscreen != null) blackscreen.SetActive(true);
         if (playSound) asource.PlayOneShot(soundToPlay);
+        if (shutUpSound) otherASource.Stop();
         StartCoroutine(GoToScene(sceneName));
     }
 
     IEnumerator GoToScene(string sceneName)
     {
-        yield return new WaitForSecondsRealtime(4f);
+        if (quickie) yield return new WaitForSecondsRealtime(1f);
+        else yield return new WaitForSecondsRealtime(4f);
         SceneManager.LoadScene(sceneName);
     }
 

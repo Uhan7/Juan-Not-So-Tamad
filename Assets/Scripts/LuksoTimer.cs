@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class LuksoTimer : MonoBehaviour
 {
@@ -52,8 +53,8 @@ public class LuksoTimer : MonoBehaviour
         anim = GetComponent<Animator>();
         asource = GetComponent<AudioSource>();
 
-        juanScript = juan.GetComponent<LuksoJuan>();
-        juanRB = juan.GetComponent<Rigidbody2D>();
+        if (juan != null) juanScript = juan.GetComponent<LuksoJuan>();
+        if (juan != null) juanRB = juan.GetComponent<Rigidbody2D>();
 
         speedChanged = false;
 
@@ -64,7 +65,12 @@ public class LuksoTimer : MonoBehaviour
 
         anim.SetBool("Broke", broke);
 
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && touching > 0 && !broke)
+        if ((Input.GetKeyDown(KeyCode.Space) &&
+            Time.timeScale != 0 ||
+            (Input.GetMouseButtonDown(0)) && !MouseDetector.mouseDetected) &&
+            touching > 0 &&
+            !broke &&
+            Time.timeScale != 0)
         {
             asource.PlayOneShot(chosenSFX);
 
@@ -76,7 +82,7 @@ public class LuksoTimer : MonoBehaviour
             PFX.transform.SetParent(canvas.transform, false);
             PFX.transform.position = new Vector2(160, transform.position.y);
 
-            StartCoroutine(BGPulse());
+            if (bgPulse != null) StartCoroutine(BGPulse());
 
             if (chosenFX == FXs[2])
             {
@@ -91,7 +97,12 @@ public class LuksoTimer : MonoBehaviour
                 points += 3;
             }
         }
-        else if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && touching <= 0 && !broke)
+        else if ((Input.GetKeyDown(KeyCode.Space) &&
+            Time.timeScale != 0 ||
+            (Input.GetMouseButtonDown(0)) && !MouseDetector.mouseDetected) &&
+            touching <= 0 &&
+            !broke &&
+            Time.timeScale != 0)
         {
             StartCoroutine(Break());
         }
@@ -104,15 +115,15 @@ public class LuksoTimer : MonoBehaviour
         asource.PlayOneShot(breakSFX);
 
         broke = true;
-        meter.transform.localPosition = new Vector2(2, 0);
-        yield return new WaitForSecondsRealtime(brokeTime / 4);
-        meter.transform.localPosition = new Vector2(-2, 0);
-        yield return new WaitForSecondsRealtime(brokeTime / 4);
-        meter.transform.localPosition = new Vector2(2, 0);
-        yield return new WaitForSecondsRealtime(brokeTime / 4);
-        meter.transform.localPosition = new Vector2(-2, 0);
-        yield return new WaitForSecondsRealtime(brokeTime / 4);
-        meter.transform.localPosition = new Vector2(0, 0);
+        meter.transform.localPosition = new Vector2(2, meter.transform.localPosition.y);
+        yield return new WaitForSeconds(brokeTime / 4);
+        meter.transform.localPosition = new Vector2(-2, meter.transform.localPosition.y);
+        yield return new WaitForSeconds(brokeTime / 4);
+        meter.transform.localPosition = new Vector2(2, meter.transform.localPosition.y);
+        yield return new WaitForSeconds(brokeTime / 4);
+        meter.transform.localPosition = new Vector2(-2, meter.transform.localPosition.y);
+        yield return new WaitForSeconds(brokeTime / 4);
+        meter.transform.localPosition = new Vector2(0, meter.transform.localPosition.y);
         broke = false;
     }
 
@@ -158,7 +169,7 @@ public class LuksoTimer : MonoBehaviour
         if (col.gameObject.CompareTag("Lukso Meter"))
         {
             timerHits++;
-            if (timerHits % 4 == 1 && timerHits < timerHitsReq)
+            if (timerHits % 4 == 1 && timerHits < timerHitsReq && juan != null)
             {
 
                 juanRB.AddForce(Vector2.right * juanScript.intSpeed * 4);

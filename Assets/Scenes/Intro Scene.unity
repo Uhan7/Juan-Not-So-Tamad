@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &36153563
+--- !u!1 &1220908
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,103 +131,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 36153564}
-  - component: {fileID: 36153565}
-  m_Layer: 0
-  m_Name: Dialogue 16
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &36153564
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36153563}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &36153565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36153563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: JUAN
-    faceSprite: {fileID: 21300000, guid: 6f2ec876133e349409fd936965c932b7, type: 3}
-    sentences:
-    - hm.
-    voice: {fileID: 8300000, guid: 32ef3df3a5e8b4dabb90450dc4ded0f3, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 0
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 1496115604}
-  somethingToDestroy: {fileID: 0}
-  waitTime: 0.34
-  destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
---- !u!1 &65350309
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 65350310}
-  - component: {fileID: 65350311}
-  m_Layer: 8
-  m_Name: Box 1 L
+  - component: {fileID: 1220909}
+  - component: {fileID: 1220910}
+  m_Layer: 9
+  m_Name: Box 2 J
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &65350310
+--- !u!4 &1220909
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65350309}
+  m_GameObject: {fileID: 1220908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9, y: 0.52006125, z: -0.10041084}
+  m_LocalPosition: {x: 11.01, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 923803241}
-  m_RootOrder: 11
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &65350311
+--- !u!61 &1220910
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65350309}
+  m_GameObject: {fileID: 1220908}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -247,7 +181,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 4.934803}
   m_EdgeRadius: 0
---- !u!1 &79390295
+--- !u!1 &232528573
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -255,36 +189,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 79390297}
-  - component: {fileID: 79390296}
+  - component: {fileID: 232528574}
+  - component: {fileID: 232528575}
+  - component: {fileID: 232528576}
   m_Layer: 0
-  m_Name: Dialogue 7
+  m_Name: Dialogue 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &79390296
+--- !u!4 &232528574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232528573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 923803241}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232528575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 79390295}
+  m_GameObject: {fileID: 232528573}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: LORENZO
-    faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
+    name: Student
+    faceSprite: {fileID: -263299158, guid: c488cb8da63684169b29fc133abddcbf, type: 3}
     sentences:
-    - Ok, but that's not an excuse to what you're doing.
-    - You can't be slacking off this much.
-    voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
+    - He fell off really hard huh?
+    - no wonder people call him Juan tamad now! hahaha!
+    voice: {fileID: 8300000, guid: 5423e121160444596b8b83fa8aee0622, type: 3}
     flipFace: 0
-  trigger: 0
+  trigger: 1
   collide: 0
   nameOfCol: Juan
   destroyAfterTouch: 0
@@ -292,74 +242,26 @@ MonoBehaviour:
   destroySomethingAfterTalk: 0
   startOtherDialogueAfterTalk: 1
   doGoNext: 1
-  otherDialogueTrigger: {fileID: 1510591080}
+  otherDialogueTrigger: {fileID: 494502313}
   somethingToDestroy: {fileID: 0}
   waitTime: 0.34
   destroyWaitTime: 0
   activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
---- !u!4 &79390297
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 79390295}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &112609893
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 112609894}
-  - component: {fileID: 112609895}
-  m_Layer: 8
-  m_Name: Box 2 L
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &112609894
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112609893}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: 0.52006125, z: -0.10041084}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &112609895
+  thingToActivate: []
+--- !u!61 &232528576
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112609893}
+  m_GameObject: {fileID: 232528573}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.967401}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -370,7 +272,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 4.934803}
+  m_Size: {x: 1, y: 5}
   m_EdgeRadius: 0
 --- !u!1 &246929373
 GameObject:
@@ -432,140 +334,8 @@ Transform:
   m_Children:
   - {fileID: 1693042249}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &307845773
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 307845774}
-  - component: {fileID: 307845775}
-  m_Layer: 0
-  m_Name: Dialogue 6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &307845774
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 307845773}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &307845775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 307845773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: JUAN
-    faceSprite: {fileID: 21300000, guid: 6f2ec876133e349409fd936965c932b7, type: 3}
-    sentences:
-    - Twice.
-    voice: {fileID: 8300000, guid: 32ef3df3a5e8b4dabb90450dc4ded0f3, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 0
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 79390295}
-  somethingToDestroy: {fileID: 0}
-  waitTime: 0.34
-  destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
---- !u!1 &359690389
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 359690390}
-  - component: {fileID: 359690391}
-  m_Layer: 0
-  m_Name: Dialogue 10
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &359690390
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359690389}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &359690391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359690389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: JUAN
-    faceSprite: {fileID: 21300000, guid: 6f2ec876133e349409fd936965c932b7, type: 3}
-    sentences:
-    - Good. Same.
-    voice: {fileID: 8300000, guid: 32ef3df3a5e8b4dabb90450dc4ded0f3, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 1
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 1433494453}
-  somethingToDestroy: {fileID: 999675482}
-  waitTime: 0.34
-  destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
 --- !u!1 &426608235
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,73 +471,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426608235}
   m_CullTransparentMesh: 1
---- !u!1 &443902530
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 443902532}
-  - component: {fileID: 443902531}
-  m_Layer: 0
-  m_Name: Dialogue 9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &443902531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443902530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: LORENZO
-    faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
-    sentences:
-    - Listen, Juan.
-    - I don't want to train for Basketball anymore.
-    voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 0
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 359690389}
-  somethingToDestroy: {fileID: 0}
-  waitTime: 0.34
-  destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
---- !u!4 &443902532
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443902530}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &448945676
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,12 +522,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448945676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: -3, z: 0}
+  m_LocalPosition: {x: -10, y: -2, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &475846035
 GameObject:
@@ -959,7 +662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475846035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.016658, y: -0.024999976, z: -10}
+  m_LocalPosition: {x: -10.016658, y: -0.025000006, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1099,6 +802,99 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &494502313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 494502314}
+  - component: {fileID: 494502316}
+  - component: {fileID: 494502315}
+  m_Layer: 0
+  m_Name: Dialogue 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &494502314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494502313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.81, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 923803241}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &494502315
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494502313}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.84181106}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.6836216}
+  m_EdgeRadius: 0
+--- !u!114 &494502316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494502313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Student
+    faceSprite: {fileID: -270192884, guid: c488cb8da63684169b29fc133abddcbf, type: 3}
+    sentences:
+    - hahahaha! you're right!
+    - juan tamad!
+    voice: {fileID: 8300000, guid: f6ef5d3bbc10e46b5946999793232ef5, type: 3}
+    flipFace: 0
+  trigger: 0
+  collide: 0
+  nameOfCol: Juan
+  destroyAfterTouch: 0
+  destroyAfterTalk: 1
+  destroySomethingAfterTalk: 1
+  startOtherDialogueAfterTalk: 0
+  doGoNext: 0
+  otherDialogueTrigger: {fileID: 0}
+  somethingToDestroy: {fileID: 1220908}
+  waitTime: 0.34
+  destroyWaitTime: 0.5
+  activateSomethingAfterTalk: 0
+  thingToActivate: []
 --- !u!1 &500605346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,7 +1177,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &600774142
+--- !u!1 &710746111
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1389,134 +1185,127 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 600774144}
-  - component: {fileID: 600774143}
+  - component: {fileID: 710746112}
+  - component: {fileID: 710746113}
   m_Layer: 0
-  m_Name: Dialogue 5
+  m_Name: BGM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &600774143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600774142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: LORENZO
-    faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
-    sentences:
-    - I know we failed the Basketball Regionals like once, but-
-    voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 0
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 307845773}
-  somethingToDestroy: {fileID: 0}
-  waitTime: 0.34
-  destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
---- !u!4 &600774144
+  m_IsActive: 1
+--- !u!4 &710746112
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600774142}
+  m_GameObject: {fileID: 710746111}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 4
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &626898690
-GameObject:
+--- !u!82 &710746113
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 626898691}
-  - component: {fileID: 626898692}
-  m_Layer: 0
-  m_Name: Dialogue 18
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &626898691
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626898690}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &626898692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626898690}
+  m_GameObject: {fileID: 710746111}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: JUAN
-    faceSprite: {fileID: 21300000, guid: 6f2ec876133e349409fd936965c932b7, type: 3}
-    sentences:
-    - Lorenzo.
-    - It's gonna be luksong baka huh?
-    - hahahaha.
-    - I'll give you a good fight.
-    voice: {fileID: 8300000, guid: 32ef3df3a5e8b4dabb90450dc4ded0f3, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 1
-  startOtherDialogueAfterTalk: 0
-  doGoNext: 0
-  otherDialogueTrigger: {fileID: 0}
-  somethingToDestroy: {fileID: 2088592549}
-  waitTime: 0.34
-  destroyWaitTime: 1
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
---- !u!1 &790247267
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b7acc4d5b88c64353931b59fc6c1ad89, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.45
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &766235142
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1524,74 +1313,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 790247268}
-  - component: {fileID: 790247270}
-  m_Layer: 0
-  m_Name: Dialogue 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &790247268
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790247267}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &790247270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790247267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: JUAN
-    faceSprite: {fileID: 21300000, guid: 6f2ec876133e349409fd936965c932b7, type: 3}
-    sentences:
-    - O, what's up?
-    voice: {fileID: 8300000, guid: 32ef3df3a5e8b4dabb90450dc4ded0f3, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 0
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 873155881}
-  somethingToDestroy: {fileID: 0}
-  waitTime: 1
-  destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
---- !u!1 &873155881
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 873155882}
-  - component: {fileID: 873155883}
+  - component: {fileID: 766235143}
+  - component: {fileID: 766235144}
+  - component: {fileID: 766235145}
   m_Layer: 0
   m_Name: Dialogue 3
   m_TagString: Untagged
@@ -1599,55 +1323,83 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &873155882
+--- !u!4 &766235143
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 873155881}
+  m_GameObject: {fileID: 766235142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 923803241}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &873155883
+--- !u!114 &766235144
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 873155881}
+  m_GameObject: {fileID: 766235142}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: LORENZO
-    faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
+    name: Director
+    faceSprite: {fileID: 2096986689, guid: c488cb8da63684169b29fc133abddcbf, type: 3}
     sentences:
-    - What's been happening with you?
-    voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
+    - listen juan
+    - I'm afraid that your grades have fallen quite a lot
+    - You're on very thin ice.
+    voice: {fileID: 8300000, guid: 3c047f32d50d24c429dacf7782099590, type: 3}
     flipFace: 0
   trigger: 0
-  collide: 0
+  collide: 1
   nameOfCol: Juan
   destroyAfterTouch: 0
   destroyAfterTalk: 1
   destroySomethingAfterTalk: 0
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 931250533}
+  startOtherDialogueAfterTalk: 0
+  doGoNext: 0
+  otherDialogueTrigger: {fileID: 0}
   somethingToDestroy: {fileID: 0}
   waitTime: 0.34
   destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
+  activateSomethingAfterTalk: 1
   thingToActivate:
-  - {fileID: 0}
+  - {fileID: 232528573}
+--- !u!61 &766235145
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766235142}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 5}
+  m_EdgeRadius: 0
 --- !u!1 &911626073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,7 +1466,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &923803240
 GameObject:
@@ -1745,97 +1497,16 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2021462144}
-  - {fileID: 790247268}
-  - {fileID: 873155882}
-  - {fileID: 931250534}
-  - {fileID: 600774144}
-  - {fileID: 307845774}
-  - {fileID: 79390297}
-  - {fileID: 1510591081}
-  - {fileID: 443902532}
-  - {fileID: 359690390}
   - {fileID: 999675483}
-  - {fileID: 65350310}
-  - {fileID: 2088592550}
-  - {fileID: 112609894}
-  - {fileID: 1433494455}
-  - {fileID: 1510164476}
-  - {fileID: 1700616957}
-  - {fileID: 1535338583}
-  - {fileID: 1928311390}
-  - {fileID: 36153564}
-  - {fileID: 1496115605}
-  - {fileID: 626898691}
+  - {fileID: 1791180001}
+  - {fileID: 766235143}
+  - {fileID: 232528574}
+  - {fileID: 494502314}
+  - {fileID: 1220909}
   - {fileID: 2129882832}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &931250533
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 931250534}
-  - component: {fileID: 931250535}
-  m_Layer: 0
-  m_Name: Dialogue 4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &931250534
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931250533}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &931250535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931250533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: JUAN
-    faceSprite: {fileID: 21300000, guid: 6f2ec876133e349409fd936965c932b7, type: 3}
-    sentences:
-    - I don't know, I've just lost it.
-    voice: {fileID: 8300000, guid: 32ef3df3a5e8b4dabb90450dc4ded0f3, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 0
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 600774142}
-  somethingToDestroy: {fileID: 0}
-  waitTime: 0.34
-  destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
 --- !u!1 &999675482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,12 +1532,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999675482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 0.52006125, z: -0.10041084}
+  m_LocalPosition: {x: -7.71, y: 0.52006125, z: -0.10041084}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 923803241}
-  m_RootOrder: 10
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &999675484
 BoxCollider2D:
@@ -1894,108 +1565,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 4.934803}
   m_EdgeRadius: 0
---- !u!1001 &1135447573
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1313196740}
-    m_Modifications:
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 960
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796766, guid: b9c89be80712a42c884888cea5919765, type: 3}
-      propertyPath: m_Name
-      value: BTIn
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9c89be80712a42c884888cea5919765, type: 3}
---- !u!224 &1135447574 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1933851635448796765, guid: b9c89be80712a42c884888cea5919765, type: 3}
-  m_PrefabInstance: {fileID: 1135447573}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1313196736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,11 +1657,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2088548328}
-  - {fileID: 1135447574}
   - {fileID: 1409337825}
+  - {fileID: 1741899766}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2139,7 +1707,7 @@ RectTransform:
   - {fileID: 500605347}
   - {fileID: 483605625}
   m_Father: {fileID: 1313196740}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2237,7 +1805,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2321,72 +1889,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1433494453
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1433494455}
-  - component: {fileID: 1433494454}
-  m_Layer: 0
-  m_Name: Dialogue 11
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1433494454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433494453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: LORENZO
-    faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
-    sentences:
-    - But I still wanna join Palaro.
-    voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 1
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 1510164475}
-  somethingToDestroy: {fileID: 65350309}
-  waitTime: 0.34
-  destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
---- !u!4 &1433494455
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433494453}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1448585714
 GameObject:
   m_ObjectHideFlags: 0
@@ -2522,274 +2024,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448585714}
   m_CullTransparentMesh: 1
---- !u!1 &1496115604
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1496115605}
-  - component: {fileID: 1496115606}
-  m_Layer: 0
-  m_Name: Dialogue 17
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1496115605
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496115604}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1496115606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496115604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: LORENZO
-    faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
-    sentences:
-    - So when you've decided to finally make a change.
-    - To stop slacking off and being a Juan Tamad.
-    - Meet me in this street, after classes tomorrow.
-    - See ya.
-    voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 1
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 626898690}
-  somethingToDestroy: {fileID: 112609893}
-  waitTime: 4
-  destroyWaitTime: 0.5
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
---- !u!1 &1510164475
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1510164476}
-  - component: {fileID: 1510164477}
-  m_Layer: 0
-  m_Name: Dialogue 12
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1510164476
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510164475}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1510164477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510164475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: JUAN
-    faceSprite: {fileID: 21300000, guid: 6f2ec876133e349409fd936965c932b7, type: 3}
-    sentences:
-    - Huh?! How?
-    voice: {fileID: 8300000, guid: 32ef3df3a5e8b4dabb90450dc4ded0f3, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 0
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 1700616955}
-  somethingToDestroy: {fileID: 0}
-  waitTime: 0.34
-  destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
---- !u!1 &1510591080
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1510591081}
-  - component: {fileID: 1510591082}
-  m_Layer: 0
-  m_Name: Dialogue 8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1510591081
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510591080}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1510591082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510591080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: JUAN
-    faceSprite: {fileID: 21300000, guid: 6f2ec876133e349409fd936965c932b7, type: 3}
-    sentences:
-    - What's the point.
-    - I feel my love for sports falling apart too.
-    voice: {fileID: 8300000, guid: 32ef3df3a5e8b4dabb90450dc4ded0f3, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 0
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 443902530}
-  somethingToDestroy: {fileID: 0}
-  waitTime: 0.34
-  destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
---- !u!1 &1535338582
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1535338583}
-  - component: {fileID: 1535338584}
-  m_Layer: 0
-  m_Name: Dialogue 14
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1535338583
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535338582}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1535338584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535338582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: JUAN
-    faceSprite: {fileID: 21300000, guid: 6f2ec876133e349409fd936965c932b7, type: 3}
-    sentences:
-    - Well, are you gonna count me in?
-    voice: {fileID: 8300000, guid: 32ef3df3a5e8b4dabb90450dc4ded0f3, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 0
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 1928311388}
-  somethingToDestroy: {fileID: 0}
-  waitTime: 0.34
-  destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
 --- !u!1 &1693042248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2816,7 +2050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693042248}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24, y: -0.63, z: -10}
+  m_LocalPosition: {x: -21.27, y: -0.49, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3012,7 +2246,114 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697307094}
   m_CullTransparentMesh: 1
---- !u!1 &1700616955
+--- !u!1001 &1741899764
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1313196740}
+    m_Modifications:
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 960
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -480
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1933851635448796766, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+      propertyPath: m_Name
+      value: BTOut
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+--- !u!1 &1741899765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1933851635448796766, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+  m_PrefabInstance: {fileID: 1741899764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1741899766 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
+  m_PrefabInstance: {fileID: 1741899764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1791180000
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3020,66 +2361,65 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1700616957}
-  - component: {fileID: 1700616956}
+  - component: {fileID: 1791180001}
+  - component: {fileID: 1791180002}
   m_Layer: 0
-  m_Name: Dialogue 13
+  m_Name: Dialogue 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1700616956
+--- !u!4 &1791180001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791180000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 923803241}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1791180002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700616955}
+  m_GameObject: {fileID: 1791180000}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: LORENZO
-    faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
+    name: Student
+    faceSprite: {fileID: -263299158, guid: c488cb8da63684169b29fc133abddcbf, type: 3}
     sentences:
-    - They now have a category for Pinoy games.
-    - Traditional. Pinoy. Games.
-    - Same ones we've played in this very street.
-    voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
+    - no way! juan?! what happened to him?
+    - wasn't he our basketball mvp?!
+    voice: {fileID: 8300000, guid: 5423e121160444596b8b83fa8aee0622, type: 3}
     flipFace: 0
   trigger: 0
-  collide: 0
+  collide: 1
   nameOfCol: Juan
   destroyAfterTouch: 0
   destroyAfterTalk: 1
-  destroySomethingAfterTalk: 0
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 1535338582}
-  somethingToDestroy: {fileID: 0}
+  destroySomethingAfterTalk: 1
+  startOtherDialogueAfterTalk: 0
+  doGoNext: 0
+  otherDialogueTrigger: {fileID: 0}
+  somethingToDestroy: {fileID: 999675482}
   waitTime: 0.34
   destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
+  activateSomethingAfterTalk: 1
   thingToActivate:
-  - {fileID: 0}
---- !u!4 &1700616957
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700616955}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  - {fileID: 766235142}
 --- !u!1 &1797709413
 GameObject:
   m_ObjectHideFlags: 3
@@ -3177,12 +2517,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840987120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: -0.63, z: 0}
+  m_LocalPosition: {x: -22.27, y: -0.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1840987122
 BoxCollider2D:
@@ -3491,344 +2831,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891021420}
   m_CullTransparentMesh: 1
---- !u!1 &1912476744
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1912476751}
-  - component: {fileID: 1912476750}
-  - component: {fileID: 1912476749}
-  - component: {fileID: 1912476748}
-  - component: {fileID: 1912476747}
-  - component: {fileID: 1912476745}
-  - component: {fileID: 1912476752}
-  m_Layer: 8
-  m_Name: Lorenzo
-  m_TagString: Lorenzo
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!82 &1912476745
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912476744}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 0.45
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1912476747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912476744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aef70844e2eec49f58b8136e7de0d795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4.5
-  walk1SFX: {fileID: 8300000, guid: d19e528ef54064b0aa6ff10becb9e285, type: 3}
-  walk2SFX: {fileID: 8300000, guid: 3711706780fe547979ab9c89622b3ef1, type: 3}
---- !u!61 &1912476748
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912476744}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.7}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.5, y: 5.625}
-    newSize: {x: 1, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2}
-  m_EdgeRadius: 0
---- !u!50 &1912476749
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912476744}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 2.4
-  m_Material: {fileID: 6200000, guid: 02c0d809e56a74cfabfbc86701960c78, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!212 &1912476750
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912476744}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
-  m_Sprite: {fileID: -779713319, guid: 9b266fb2333104e76a486000a6656c9e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1912476751
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912476744}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15, y: -1.71, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1912476752
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912476744}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 36703142f579f47c4a546019eb2d575e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1928311388
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1928311390}
-  - component: {fileID: 1928311389}
-  m_Layer: 0
-  m_Name: Dialogue 15
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1928311389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928311388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9de81141658469e8144389c97a18dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: LORENZO
-    faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
-    sentences:
-    - Unfortunately, only one of us can represent.
-    - And I don't want to just go there and leave you.
-    - ...
-    - You might still have something in you.
-    - I still believe. You used to be our MVP after all.
-    voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
-    flipFace: 0
-  trigger: 0
-  collide: 0
-  nameOfCol: Juan
-  destroyAfterTouch: 0
-  destroyAfterTalk: 1
-  destroySomethingAfterTalk: 0
-  startOtherDialogueAfterTalk: 1
-  doGoNext: 1
-  otherDialogueTrigger: {fileID: 36153563}
-  somethingToDestroy: {fileID: 0}
-  waitTime: 0.34
-  destroyWaitTime: 0
-  activateSomethingAfterTalk: 0
-  thingToActivate:
-  - {fileID: 0}
---- !u!4 &1928311390
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928311388}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2002258132
 GameObject:
   m_ObjectHideFlags: 0
@@ -3887,8 +2889,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4e9f175c4b1754928a45a4ffbc8b8f03, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3907,7 +2909,7 @@ Transform:
   m_GameObject: {fileID: 2002258132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 40, y: 12, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3939,7 +2941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021462143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -7.81, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3959,11 +2961,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: LORENZO
-    faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
+    name: Student
+    faceSprite: {fileID: -270192884, guid: c488cb8da63684169b29fc133abddcbf, type: 3}
     sentences:
-    - Juan!
-    voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
+    - Hey, have you hear about Juan?
+    - He got called by the teacher...
+    - cause he nearly got kicked out?!
+    voice: {fileID: 8300000, guid: f6ef5d3bbc10e46b5946999793232ef5, type: 3}
     flipFace: 0
   trigger: 1
   collide: 0
@@ -3973,13 +2977,12 @@ MonoBehaviour:
   destroySomethingAfterTalk: 0
   startOtherDialogueAfterTalk: 1
   doGoNext: 1
-  otherDialogueTrigger: {fileID: 790247267}
+  otherDialogueTrigger: {fileID: 1791180000}
   somethingToDestroy: {fileID: 0}
   waitTime: 0.34
   destroyWaitTime: 0
-  activateSomethingAfterTalk: 1
-  thingToActivate:
-  - {fileID: 1912476744}
+  activateSomethingAfterTalk: 0
+  thingToActivate: []
 --- !u!61 &2021462146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4005,171 +3008,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 2.6836216}
-  m_EdgeRadius: 0
---- !u!1001 &2088548326
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1313196740}
-    m_Modifications:
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 960
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -480
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1933851635448796766, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-      propertyPath: m_Name
-      value: BTOut
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
---- !u!1 &2088548327 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1933851635448796766, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-  m_PrefabInstance: {fileID: 2088548326}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &2088548328 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1933851635448796765, guid: 6d0a1298a173d4acc844c84df69e9a64, type: 3}
-  m_PrefabInstance: {fileID: 2088548326}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2088592549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2088592550}
-  - component: {fileID: 2088592551}
-  m_Layer: 9
-  m_Name: Box 2 J
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2088592550
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088592549}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: 0.52006125, z: -0.10041084}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 923803241}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2088592551
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088592549}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.967401}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 4.934803}
   m_EdgeRadius: 0
 --- !u!1 &2129882831
 GameObject:
@@ -4197,12 +3035,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129882831}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25, y: 0.52006125, z: -0.10041084}
+  m_LocalPosition: {x: 21.88, y: 0.52006125, z: -0.10041084}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 923803241}
-  m_RootOrder: 22
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2129882833
 BoxCollider2D:
@@ -4243,12 +3081,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundToPlay: {fileID: 0}
-  blackscreen: {fileID: 2088548327}
+  blackscreen: {fileID: 1741899765}
   quickie: 0
   trigger: 0
   collide: 1
   playSound: 0
-  otherASource: {fileID: 0}
+  otherASource: {fileID: 710746113}
   shutUpSound: 0
   nameOfToucher: Juan
-  sceneToGo: Lukso Round 2
+  sceneToGo: MapGameSelection

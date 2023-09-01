@@ -12,7 +12,10 @@ public class LuksoHotspot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space) &&
+            Time.timeScale != 0 ||
+            Input.GetMouseButtonDown(0) && !MouseDetector.mouseDetected &&
+            Time.timeScale != 0)
         {
             if (touching)
             {

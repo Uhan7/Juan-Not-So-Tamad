@@ -22,6 +22,8 @@ public class LuksoFillBar : MonoBehaviour
     {
         timerScript = timer.GetComponent<LuksoTimer>();
 
+        fillBar.fillAmount = 0;
+
         flashed = false;
     }
 

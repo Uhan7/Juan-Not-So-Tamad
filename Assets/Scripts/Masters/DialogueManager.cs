@@ -103,7 +103,6 @@ public class DialogueManager : MonoBehaviour
                     letter == '(' ||
                     letter == ')') yield return new WaitForSeconds(pausesSpeed);
                 if (letter == '.' ||
-                    letter == '?' ||
                     letter == '!') yield return new WaitForSeconds(periodSpeed);
             }
             if (skipSentence || dialogueText.text == sentence)
