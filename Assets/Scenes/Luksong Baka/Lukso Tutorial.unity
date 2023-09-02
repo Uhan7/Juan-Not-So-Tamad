@@ -1440,7 +1440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSFX: {fileID: 8300000, guid: 9653920d6e359492faadad71671021ba, type: 3}
-  speed: 40
+  speed: 1
   brokeTime: 1
   juan: {fileID: 0}
   meter: {fileID: 2053830391}
@@ -2953,9 +2953,9 @@ MonoBehaviour:
     name: LORENZO
     faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
     sentences:
-    - That bar on the bottom is the height of your jump.
+    - That red bar on the bottom is the height of your jump.
     - If you got a perfect score, it flashes to let you know.
-    - Your goal is at least 70% of the max score to pass.
+    - Your goal is at least 80% of the max score to pass.
     voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
     flipFace: 1
   trigger: 0
@@ -4057,6 +4057,8 @@ MonoBehaviour:
     sentences:
     - This is the "Lukso Meter."
     - it's what you should focus on in luksong baka, specifically.
+    - It appears on the bottom of the screen.
+    - For demonstration purposes though, it'll be displayed on top.
     - A timer ticks back and forth.
     - And you must time a left mouse click, or a space bar tap.
     - How well you time it equates to how high your jump will be.

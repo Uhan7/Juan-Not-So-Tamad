@@ -58,7 +58,7 @@ public class HotspotSpawner : MonoBehaviour
             Prehotspot = Instantiate(preHotspot[1]);
         }
         Prehotspot.transform.SetParent(spawner.transform, false);
-        Prehotspot.transform.localPosition = new Vector2(pos, transform.position.y-162);
+        Prehotspot.transform.localPosition = new Vector2(pos, -72);
 
         yield return null;
     }
@@ -79,7 +79,7 @@ public class HotspotSpawner : MonoBehaviour
             Hotspot = Instantiate(hotspot[1]);
         }
         Hotspot.transform.SetParent(spawner.transform, false);
-        Hotspot.transform.localPosition = new Vector2(pos, transform.position.y - 162);
+        Hotspot.transform.localPosition = new Vector2(pos, -72);
 
         yield return null;
     }

@@ -91,7 +91,7 @@ public class LuksoJuan : MonoBehaviour
         if (win) rb.AddForce( (Vector2.up * jumpHeight) + Vector2.up * jumpHeight * LuksoTimer.points);
         else if (!win)
         {
-            rb.AddForce((Vector2.up * jumpHeight * 5) + (Vector2.up *jumpHeight * LuksoTimer.points * 0.7f)); 
+            rb.AddForce((Vector2.up * jumpHeight * 5) + (Vector2.up *jumpHeight * LuksoTimer.points * 0.65f)); 
         }
         endRun = true;
         yield return new WaitForSecondsRealtime(waitTime1);

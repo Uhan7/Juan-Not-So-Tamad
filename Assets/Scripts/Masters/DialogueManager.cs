@@ -116,7 +116,6 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        print("boink");
         openWindow = false;
     }
 

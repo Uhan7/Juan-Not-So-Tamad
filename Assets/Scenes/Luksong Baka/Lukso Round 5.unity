@@ -510,9 +510,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Luksong Baka:
+  m_text: 'you won!
 
-    Final Round'
+    but I didnt program
+
+    this yet so uh
+
+    yeah.
+
+    you
+    win tho!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
   m_sharedMaterial: {fileID: -7694693843793642802, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
@@ -892,9 +899,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   luksoTimer: {fileID: 1108667410}
   meter: {fileID: 1858339599}
-  reqPoints: 120
+  reqPoints: 137
   beep: {fileID: 8300000, guid: e3dbf34f8db1c448ca079987beacd223, type: 3}
-  waitTime: 1.04
+  waitTime: 1.03
   roundEnd: 0
   blackscreen: {fileID: 217459857}
   otherBlackscreen: {fileID: 1120325489}
@@ -927,7 +934,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.85
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1924,7 +1931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 50}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &380609840
@@ -1947,9 +1954,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Luksong Baka:
+  m_text: 'you won!
 
-    Final Round'
+    but I didnt program
+
+    this yet so uh
+
+    yeah.
+
+    you
+    win tho!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
   m_sharedMaterial: {fileID: -7694693843793642802, guid: 50c60bd0b09df42de9248daa2de22ff5, type: 2}
@@ -2081,7 +2095,7 @@ MonoBehaviour:
   otherASource: {fileID: 0}
   shutUpSound: 0
   nameOfToucher: Juan
-  sceneToGo: Lukso Round 5
+  sceneToGo: Lukso Win Scene
 --- !u!61 &392954337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2953,18 +2967,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 195378729}
-        m_TargetAssemblyTypeName: LuksoGameMaster, Assembly-CSharp
-        m_MethodName: InvokerWithPause
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BackToHome
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &595280661
@@ -3908,7 +3910,7 @@ MonoBehaviour:
     name: Lorenzo
     faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
     sentences:
-    - '*pant* so, juan.. *pant* *pant*'
+    - epic
     voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
     flipFace: 1
   trigger: 1
@@ -3973,10 +3975,7 @@ MonoBehaviour:
     name: Juan
     faceSprite: {fileID: 21300000, guid: 6f2ec876133e349409fd936965c932b7, type: 3}
     sentences:
-    - you gettin' tired, lorenzo?
-    - I kinda never gave it my all whenever we would play this.
-    - But now, now that something big is on the line.
-    - I feel the heeeeaaattt! hahaha!
+    - epic
     voice: {fileID: 8300000, guid: 32ef3df3a5e8b4dabb90450dc4ded0f3, type: 3}
     flipFace: 0
   trigger: 0
@@ -4768,10 +4767,7 @@ MonoBehaviour:
     name: Lorenzo
     faceSprite: {fileID: 21300000, guid: ea2f929676a6546989fcdf6f187aef9e, type: 3}
     sentences:
-    - '*pant* yeah uh.. alright.'
-    - '*pant* *pant* see I''m running out of *pant*'
-    - ..c-cones to use so.. *coughs*
-    - I strongly doubt you'll get through *coughs* ..the final round.
+    - I lvoe you
     voice: {fileID: 8300000, guid: aa026e56040b34f4d93d78e2eb81fe5f, type: 3}
     flipFace: 1
   trigger: 0
@@ -4830,7 +4826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -71.85}
+  m_AnchoredPosition: {x: -5, y: -71.85}
   m_SizeDelta: {x: 16, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1108667412
@@ -4974,7 +4970,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 1.25, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &1108667415
 MonoBehaviour:
@@ -4989,7 +4985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSFX: {fileID: 8300000, guid: 9653920d6e359492faadad71671021ba, type: 3}
-  speed: 144.25
+  speed: 2.825
   brokeTime: 1
   juan: {fileID: 1840987120}
   meter: {fileID: 1858339599}
@@ -5000,8 +4996,8 @@ MonoBehaviour:
   - {fileID: 7078302245697152810, guid: d866cfae9bbac4e41be26e54b9c16037, type: 3}
   pulseFX: {fileID: 7078302245697152810, guid: 735ff6e8e30804d4d98eebeea510ed00, type: 3}
   bgPulse: {fileID: 2002258132}
-  YellowSFX: {fileID: 8300000, guid: 67393d9a87a5f42b99f9c32fdb4d8b92, type: 3}
-  OrangeSFX: {fileID: 8300000, guid: 7c0c9eb99b0e6438da79e192df6bbe05, type: 3}
+  YellowSFX: {fileID: 8300000, guid: f9fdf987ef0a94f77abe1b870b4c4a92, type: 3}
+  OrangeSFX: {fileID: 8300000, guid: acdab9c7d6b824b11bf318df7c360232, type: 3}
   RedSFX: {fileID: 8300000, guid: bb3ab1ada201f4eb8a4b26e47ceed7e6, type: 3}
   timerHitsReq: 169
   timerHits: 0
@@ -5013,7 +5009,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108667410}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -7370,7 +7366,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9, y: 2}
+  m_Size: {x: 12, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893777
 BoxCollider2D:
@@ -7396,7 +7392,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9, y: 2}
+  m_Size: {x: 12, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893778
 BoxCollider2D:
@@ -7805,13 +7801,13 @@ MonoBehaviour:
   hitSFX: {fileID: 8300000, guid: c774c3f019f7a4da4b585d25d5c25008, type: 3}
   loseJingle: {fileID: 8300000, guid: 393c446061bfc4633a0e0f539b3e7a83, type: 3}
   jumpSFX: {fileID: 8300000, guid: 58489885478f44207b91b1f382d303f4, type: 3}
-  intSpeed: 66.666664
+  intSpeed: 66
   endSpeed: 6
-  jumpHeight: 9.25
+  jumpHeight: 7.85
   decaySpeed: 0.8
-  slowTimeScale: 0.2
-  waitTime1: 2.05
-  waitTime2: 0.85
+  slowTimeScale: 0.1
+  waitTime1: 4
+  waitTime2: 1
   moved: 0
   backgroundNormal: {fileID: 1973176025}
   gameOverScreen: {fileID: 14350585}

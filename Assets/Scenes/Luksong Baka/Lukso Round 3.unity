@@ -892,9 +892,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   luksoTimer: {fileID: 1108667410}
   meter: {fileID: 1858339599}
-  reqPoints: 42
+  reqPoints: 48
   beep: {fileID: 8300000, guid: e67bfb9d046cb4cb988d3c8f53e20eac, type: 3}
-  waitTime: 1.818
+  waitTime: 1.78
   roundEnd: 0
   blackscreen: {fileID: 217459857}
   otherBlackscreen: {fileID: 1120325489}
@@ -2955,18 +2955,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 195378729}
-        m_TargetAssemblyTypeName: LuksoGameMaster, Assembly-CSharp
-        m_MethodName: InvokerWithPause
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BackToHome
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &595280661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4827,7 +4815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -71.85}
+  m_AnchoredPosition: {x: -2, y: -71.85}
   m_SizeDelta: {x: 16, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1108667412
@@ -4986,7 +4974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSFX: {fileID: 8300000, guid: 9653920d6e359492faadad71671021ba, type: 3}
-  speed: 81.55
+  speed: 1.615
   brokeTime: 1
   juan: {fileID: 1840987120}
   meter: {fileID: 1858339599}
@@ -7367,7 +7355,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 2}
+  m_Size: {x: 7, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893777
 BoxCollider2D:
@@ -7393,7 +7381,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 2}
+  m_Size: {x: 7, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893778
 BoxCollider2D:
@@ -7419,7 +7407,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893779
 BoxCollider2D:
@@ -7445,7 +7433,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893780
 BoxCollider2D:
@@ -7471,7 +7459,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893781
 BoxCollider2D:
@@ -7497,7 +7485,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893782
 BoxCollider2D:
@@ -7523,7 +7511,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893783
 BoxCollider2D:
@@ -7549,7 +7537,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893784
 BoxCollider2D:
@@ -7575,7 +7563,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 2}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!1 &1797709413
 GameObject:

@@ -80,8 +80,8 @@ public class LuksoTimer : MonoBehaviour
 
             var PFX = Instantiate(pulseFX) as GameObject;
             PFX.transform.SetParent(canvas.transform, false);
-            PFX.transform.position = new Vector2(160, transform.position.y);
-
+            if (bgPulse == null) PFX.transform.localPosition = new Vector2(0, 78);
+            else PFX.transform.localPosition = new Vector2(0, -72);
             if (bgPulse != null) StartCoroutine(BGPulse());
 
             if (chosenFX == FXs[2])
@@ -107,6 +107,23 @@ public class LuksoTimer : MonoBehaviour
             StartCoroutine(Break());
         }
 
+        if (rt.localPosition.x >= 146 && !speedChanged)
+        {
+            speed *= -1;
+            speedChanged = true;
+        }
+        if (rt.localPosition.x <= -146.25 && speedChanged)
+        {
+            speed *= -1;
+            speedChanged = false;
+        }
+
+
+    }
+
+    void FixedUpdate()
+    {
+        rt.localPosition = new Vector2(rt.localPosition.x + speed, rt.localPosition.y);
     }
 
     IEnumerator Break()
@@ -145,22 +162,6 @@ public class LuksoTimer : MonoBehaviour
             yield return null;
         }
         // valueToLerp = endValue;
-    }
-
-    void FixedUpdate()
-    {
-        rb.velocity = (Vector2.right * speed);
-
-        if (rt.localPosition.x >= 146 && !speedChanged)
-        {
-            speed *= -1;
-            speedChanged = true;
-        }
-        if (rt.localPosition.x <= -146 && speedChanged)
-        {
-            speed *= -1;
-            speedChanged = false;
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D col)

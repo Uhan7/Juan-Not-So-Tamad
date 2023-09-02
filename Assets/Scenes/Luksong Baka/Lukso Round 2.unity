@@ -892,9 +892,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   luksoTimer: {fileID: 1108667410}
   meter: {fileID: 1858339599}
-  reqPoints: 26
+  reqPoints: 29
   beep: {fileID: 8300000, guid: 77f92acc0af6f44c8871e313be663b9c, type: 3}
-  waitTime: 2.47
+  waitTime: 2.45
   roundEnd: 0
   blackscreen: {fileID: 217459857}
   otherBlackscreen: {fileID: 1120325489}
@@ -2955,18 +2955,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 195378729}
-        m_TargetAssemblyTypeName: LuksoGameMaster, Assembly-CSharp
-        m_MethodName: InvokerWithPause
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BackToHome
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &595280661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4985,7 +4973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakSFX: {fileID: 8300000, guid: 9653920d6e359492faadad71671021ba, type: 3}
-  speed: 59.75
+  speed: 1.185
   brokeTime: 1
   juan: {fileID: 1840987120}
   meter: {fileID: 1858339599}
@@ -7368,7 +7356,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 2}
+  m_Size: {x: 6, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893777
 BoxCollider2D:
@@ -7394,7 +7382,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 2}
+  m_Size: {x: 6, y: 2}
   m_EdgeRadius: 0
 --- !u!61 &1793893778
 BoxCollider2D:
